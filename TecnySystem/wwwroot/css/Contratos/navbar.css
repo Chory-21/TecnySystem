@@ -1,0 +1,369 @@
+﻿#sidebar {
+    background: #fff;
+    /*background: #6c757d !important;*/
+    /*width: 300px;*/
+    min-width: 300px;
+    max-width: 300px;
+    transition-property: all;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in;
+  
+
+    top: 54px;
+}
+
+    /* Shrinking the sidebar from 250px to 80px and center aligining its content*/
+    #sidebar.active {
+        min-width: 50px;
+        max-width: 90px;
+        background: #fff !important;
+        /*background:#6c757d  !important;*/
+        text-align: center;
+        transition-property: all;
+        transition-duration: 300ms;
+        transition-timing-function: ease-in;
+        /*transition: transform 0.5s linear;*/
+    }
+
+    /* Toggling the sidebar header content, hide the big heading [h3] and showing the small heading [strong] and vice versa*/
+    #sidebar .sidebar-header strong {
+        display: none;
+    }
+
+    #sidebar.active .sidebar-header h3 {
+        display: none;
+    }
+
+    #sidebar.active .sidebar-header strong {
+        display: block;
+    }
+
+    #sidebar ul li a {
+        font-size: 14px;
+        text-align: left;
+        font-weight: 300;
+    }
+
+    #sidebar.active ul li a {
+        padding: 20px 10px;
+        text-align: center;
+        font-size: 0.85em;
+    }
+
+        #sidebar.active ul li a h6 {
+            margin-right: 0;
+            display: none;
+        }
+
+        #sidebar.active ul li a i {
+            margin-right: 0;
+            display: block;
+            font-size: 1.8em;
+            margin-bottom: 5px;
+        }
+
+    /* Same dropdown links padding*/
+    #sidebar.active ul ul a {
+        padding: 10px !important;
+    }
+
+/*color*/
+.titulo-sdbar {
+    color: white;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.sdb-empresa {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.sdb-tipo {
+    font-size: 15px;
+    font-weight: 300;
+}
+/*fin color*/
+.sdb-select select {
+/*    border: none;
+    border-bottom: 1px solid #657c91;
+    border-radius: 0%;*/
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.icon-right {
+    position: absolute !important;
+    right: 25px !important;
+}
+
+.btn-menu {
+    padding: 6px 15px !important;
+    width: auto;
+    background: transparent;
+    border: none;
+}
+
+#sidebar .dropdown-toggle .icon-left {
+    color: white;
+    font-size: 18px;
+    transition-property: all;
+    transition-duration: 1s;
+    width: 15% !important;
+    display: flex;
+    justify-content: center;
+}
+
+#sidebar.active .dropdown-toggle {
+    display: flex !important;
+
+    justify-content: center !important;
+}
+
+    #sidebar.active .dropdown-toggle .icon-left {
+        color: white;
+        font-size: 18px;
+        transition-property: all;
+        transition-duration: 1s;
+        transition-timing-function: ease-in;
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+
+
+#sidebar .dropdown-toggle span {
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+#sidebar.active .dropdown-toggle span {
+    display: none !important;
+    font-size: 25px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+}
+
+#sidebar .dropdown-toggle .icon-right {
+    color: white;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+}
+
+#sidebar.active .dropdown-toggle .icon-right {
+    display: none !important;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+}
+
+#sidebar.active .components .sub-menu {
+    display: none !important;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+}
+
+.sub-menu li a {
+    color: #657c91 !important;
+    font-weight: 400 !important;
+}
+
+/* .collapse li a {
+  color: white !important;
+
+} */
+
+.components li div {
+    display: flex;
+    /*border-left: 2px solid #98002e;*/
+}
+
+#sidebar.active .components li div {
+    border-left: none;
+}
+
+.components li div a {
+    position: relative;
+    display: flex;
+}
+
+.components li ul {
+    background: #3d3c3c;
+}
+
+    .components li ul li:hover {
+        background: #cbcdd647 !important;
+        cursor: pointer;
+    }
+
+
+.flat-22:before {
+    font-size: 18px !important;
+}
+
+.div-nav-alert {
+    border-radius: .25rem;
+}
+
+
+    .div-nav-alert:hover {
+        background: #e7e7e726;
+    }
+
+    .div-nav-alert span {
+        font-size: 14px !important;
+        font-weight: 600 !important;
+    }
+
+.div-nav-perf {
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 33px !important;
+    width: 33px !important;
+}
+
+    .div-nav-perf span {
+        font-size: 12px;
+    }
+
+#navtop {
+    position: fixed !important;
+    z-index: 100 !important;
+}
+
+@media (max-width: 768px) {
+    /* 80px and its content aligned to centre. Pushing it off the screen with the
+     negative left margin
+  */
+    #sidebar.active {
+        min-width: 80px;
+        max-width: 80px;
+        text-align: center;
+        margin-left: -80px !important;
+    }
+
+
+    /* Reappearing the sidebar on toggle button click */
+    #sidebar {
+        margin-left: 0;
+    }
+
+
+        /* Toggling the sidebar header content,
+     hide the big heading [h3] and showing the small heading [strong] and vice versa
+  */
+        #sidebar .sidebar-header strong {
+            display: none;
+        }
+
+        #sidebar.active .sidebar-header h3 {
+            display: none;
+        }
+
+        #sidebar.active .sidebar-header strong {
+            display: block;
+        }
+
+        /* Downsize the navigation links font size */
+        #sidebar.active ul li a {
+            padding: 20px 10px;
+            font-size: 0.85em;
+        }
+
+            #sidebar.active ul li a i {
+                margin-right: 0;
+                display: block;
+                font-size: 1.8em;
+                margin-bottom: 5px;
+            }
+
+        /* Adjust the dropdown links padding*/
+        #sidebar.active ul ul a {
+            padding: 10px !important;
+        }
+
+    /* Changing the arrow position to bottom center position,
+    translateX(50%) works with right: 50%
+    to accurately  center the arrow */
+    .dropdown-toggle::after {
+        top: auto;
+        bottom: 10px;
+        right: 50%;
+        -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+        transform: translateX(50%);
+    }
+}
+
+.dropdown-menu-right-not {
+    right: 0 !important;
+    left: auto !important;
+}
+
+.icon-dropdown {
+    width: 25px;
+    text-align: center;
+}
+
+body {
+    background: red;
+}
+
+
+
+#dropzone {
+    position: relative;
+    border: 10px dotted #FFF;
+    border-radius: 20px;
+    color: black;
+    font: bold 24px/200px arial;
+    height: 200px;
+    margin: 30px auto;
+    text-align: center;
+    width: 200px;
+}
+
+    #dropzone.hover {
+        border: 10px solid #FE5;
+        color: #FE5;
+    }
+
+    #dropzone.dropped {
+        background: #222;
+        border: 10px solid #444;
+    }
+
+    #dropzone div {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    #dropzone img {
+        border-radius: 10px;
+        vertical-align: middle;
+        max-width: 95%;
+        max-height: 95%;
+    }
+
+    #dropzone [type="file"] {
+        cursor: pointer;
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }

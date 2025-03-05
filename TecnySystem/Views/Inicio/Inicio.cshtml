@@ -1,0 +1,237 @@
+﻿@{
+    ViewData["Title"] = "Inicio";
+    Layout = "~/Views/Shared/_LayoutNovedades.cshtml"; // Mantiene el layout si lo necesitas
+}
+
+<div class="row bg-white py-3 px-3 sombra">
+    <div class="col-sm-12">
+        <h4 class="m-0 color-charcoal negrita">Historial de Productos</h4>
+    </div>
+</div>
+
+<!-- Formulario de Filtros -->
+<div class="row px-3 py-3">
+    <div class="col-sm-12 col-md-3 py-2">
+        <label for="codigo" class="col-form-label">
+            <i class="fas fa-barcode px-2 color-red"></i> Código
+        </label>
+        <input type="text" class="form-control" id="codigo" name="codigo" placeholder="Ingrese código">
+    </div>
+
+    <div class="col-sm-12 col-md-3 py-2">
+        <label for="color" class="col-form-label">
+            <i class="fas fa-palette px-2 color-red"></i> Color
+        </label>
+        <select class="form-control" id="color" name="color">
+            <option value="">-- Seleccione Color --</option>
+        </select>
+    </div>
+
+    <div class="col-sm-12 col-md-3 py-2">
+        <label for="categoria" class="col-form-label">
+            <i class="fas fa-tags px-2 color-red"></i> Categoría
+        </label>
+        <select class="form-control" id="categoria" name="categoria">
+            <option value="">-- Seleccione Categoría --</option>
+            <option value="Jeans">Jeans</option>
+            <option value="Camisas">Camisas</option>
+            <option value="Chaquetas">Chaquetas</option>
+            <option value="Vestidos">Vestidos</option>
+        </select>
+    </div>
+
+    <div class="col-sm-12 col-md-3 py-2">
+        <label for="modelo" class="col-form-label">
+            <i class="fas fa-tshirt px-2 color-red"></i> Modelo
+        </label>
+        <select class="form-control" id="modelo" name="modelo">
+            <option value="">-- Seleccione Modelo --</option>
+        </select>
+    </div>
+
+    <div class="col-sm-12 col-md-3 py-2">
+        <label for="talla" class="col-form-label">
+            <i class="fas fa-ruler px-2 color-red"></i> Talla
+        </label>
+        <select class="form-control" id="talla" name="talla">
+            <option value="">-- Seleccione Talla --</option>
+            @for (int i = 28; i <= 42; i += 2)
+            {
+                <option>@i</option>
+            }
+        </select>
+    </div>
+
+    <div class="col-sm-12 col-md-3 py-2">
+        <label for="fechaRegistro" class="col-form-label">
+            <i class="far fa-calendar-alt px-2 color-red"></i> Fecha de Registro
+        </label>
+        <input type="date" class="form-control" id="fechaRegistro" name="fechaRegistro">
+    </div>
+
+    <div class="col-sm-12 col-md-3 py-2">
+        <label for="lote" class="col-form-label">
+            <i class="fas fa-box px-2 color-red"></i> Código de Lote
+        </label>
+        <input type="text" class="form-control" id="lote" name="lote" placeholder="Ingrese código de lote">
+    </div>
+
+    <div class="col-sm-12 col-md-3 py-2 d-flex align-items-end">
+        <button type="button" class="btn btn-rojo-rojo color-white w-100" id="btnConsultar">
+            Consultar <i class="fas fa-search px-2"></i>
+        </button>
+    </div>
+</div>
+
+<div class="col-sm-12 px-1 py-2">
+    <div class="row p-3">
+        <div class="col-12 bg-white btn-border p-3">
+            <table id="tblHistorialProductos" class="table table-hover table-responsive-sm w-100">
+                <thead>
+                    <tr>
+                        <th scope="col">Código</th>
+                        <th scope="col">Código Lote</th>
+                        <th scope="col">Categoría</th>
+                        <th scope="col">Modelo</th>
+                        <th scope="col">Color</th>
+                        <th scope="col">Talla</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Fecha Registro</th>
+                        <th scope="col">Falla Tela</th>
+                        <th scope="col">Falla Lavandería</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>854</td>
+                        <td>L001</td>
+                        <td>Pantalones</td>
+                        <td>M1</td>
+                        <td>Plomo</td>
+                        <td>32</td>
+                        <td>100</td>
+                        <td>2023-01-01</td>
+                        <td>1</td>
+                        <td>Desgaste</td>
+                        <td>10</td>
+                        <td><button class="btn btn-sm btn-danger">Eliminar</button></td>
+                    </tr>
+                    <tr>
+                        <td>372</td>
+                        <td>L001</td>
+                        <td>Pantalones</td>
+                        <td>M2</td>
+                        <td>Azul</td>
+                        <td>36</td>
+                        <td>50</td>
+                        <td>2023-02-01</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>5</td>
+                        <td><button class="btn btn-sm btn-danger">Eliminar</button></td>
+                    </tr>
+                    <tr>
+                        <td>846</td>
+                        <td>L001</td>
+                        <td>Falda</td>
+                        <td>M3</td>
+                        <td>azul</td>
+                        <td>40</td>
+                        <td>75</td>
+                        <td>2023-03-01</td>
+                        <td>3</td>
+                        <td>Rasgado</td>
+                        <td>8</td>
+                        <td><button class="btn btn-sm btn-danger">Eliminar</button></td>
+                    </tr>
+                    <tr>
+                        <td>034</td>
+                        <td>L002</td>
+                        <td>Casaca</td>
+                        <td>M1</td>
+                        <td>CEleste</td>
+                        <td>32</td>
+                        <td>100</td>
+                        <td>2023-01-01</td>
+                        <td>1</td>
+                        <td>Desgaste</td>
+                        <td>10</td>
+                        <td><button class="btn btn-sm btn-danger">Eliminar</button></td>
+                    </tr>
+                    <tr>
+                        <td>376</td>
+                        <td>L002</td>
+                        <td>Casaca</td>
+                        <td>M2</td>
+                        <td>Azul</td>
+                        <td>36</td>
+                        <td>50</td>
+                        <td>2023-02-01</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>5</td>
+                        <td><button class="btn btn-sm btn-danger">Eliminar</button></td>
+                    </tr>
+                    <tr>
+                        <td>845</td>
+                        <td>L001</td>
+                        <td>Short</td>
+                        <td>M3</td>
+                        <td>Plomo</td>
+                        <td>40</td>
+                        <td>75</td>
+                        <td>2023-03-01</td>
+                        <td>3</td>
+                        <td>Rasgado</td>
+                        <td>8</td>
+                        <td><button class="btn btn-sm btn-danger">Eliminar</button></td>
+                    </tr>
+                    <tr>
+                        <td>457</td>
+                        <td>L003</td>
+                        <td>ShortFalda</td>
+                        <td>M1</td>
+                        <td>Celeste</td>
+                        <td>32</td>
+                        <td>100</td>
+                        <td>2023-01-01</td>
+                        <td>1</td>
+                        <td>Desgaste</td>
+                        <td>10</td>
+                        <td><button class="btn btn-sm btn-danger">Eliminar</button></td>
+                    </tr>
+                    <tr>
+                        <td>454</td>
+                        <td>L003</td>
+                        <td>ShortFalda</td>
+                        <td>M2</td>
+                        <td>Azul</td>
+                        <td>36</td>
+                        <td>50</td>
+                        <td>2023-02-01</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>5</td>
+                        <td><button class="btn btn-sm btn-danger">Eliminar</button></td>
+                    </tr>
+                    <tr>
+                        <td>325</td>
+                        <td>L003</td>
+                        <td>Pantalones</td>
+                        <td>M3</td>
+                        <td>Verde</td>
+                        <td>40</td>
+                        <td>75</td>
+                        <td>2023-03-01</td>
+                        <td>3</td>
+                        <td>Rasgado</td>
+                        <td>8</td>
+                        <td><button class="btn btn-sm btn-danger">Eliminar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

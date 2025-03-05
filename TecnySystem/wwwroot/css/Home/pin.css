@@ -1,0 +1,227 @@
+﻿@-webkit-keyframes blink {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes blink {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+
+main.container-pin {
+    transition-duration: 0.6s;
+}
+
+    main.container-pin .pin-wrapper {
+        font-weight: 600;
+        color: var(--slate-oscuro) !important;
+        background: #FFFEFE;
+        font-size: 1.7em;
+        line-height: 1;
+        position: relative;
+        border: 1px solid var(--red);
+        border-radius: 20px
+    }
+
+        main.container-pin .pin-wrapper.disabled {
+            opacity: 0.5;
+        }
+
+        main.container-pin .pin-wrapper .digits {
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            height: 1em;
+            padding: 20px 45px;
+            /*            width: 180px;*/
+            max-width: 280px;
+            min-width: 80px;
+            box-sizing: initial;
+            margin: 0px auto;
+        }
+
+            main.container-pin .pin-wrapper .digits .digit {
+                position: relative;
+                display: block;
+                min-height: 1rem;
+                min-width: 1rem;
+            }
+
+                main.container-pin .pin-wrapper .digits .digit::before {
+                    content: attr(data-digit);
+                    display: block;
+                    opacity: 0;
+                    transform: scale(0.6);
+                    transition-duration: 0.2s;
+                    transition-delay: 0.15s;
+                    margin-top: -1px;
+                }
+
+                main.container-pin .pin-wrapper .digits .digit[data-digit=""]::after {
+                    content: '';
+                    position: absolute;
+                    width: 4px;
+                    height: 28px;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background: #ed1a3b;
+                }
+
+                main.container-pin .pin-wrapper .digits .digit.shown::before {
+                    opacity: 1;
+                    transform: scale(1);
+                    transition-duration: 0.45s;
+                }
+
+            main.container-pin .pin-wrapper .digits .caret {
+                position: absolute;
+                width: 0;
+                height: 28px;
+                background: #98002e;
+                left: 0;
+            }
+
+        main.container-pin .pin-wrapper .submit {
+            position: absolute;
+            background: #98002e;
+            top: 0;
+            left: 100%;
+            height: 100%;
+            width: calc(1rem + 90px);
+            border: none;
+            z-index: -1;
+            transform: translateX(-100%);
+            transition-duration: 0.6s;
+        }
+
+            main.container-pin .pin-wrapper .submit svg {
+                width: 40px;
+                position: absolute;
+                top: 50%;
+                transform: translate(-25%, -50%);
+                opacity: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                fill: white;
+                transition-duration: 0.6s;
+                transition-delay: 0.25s;
+            }
+
+        main.container-pin .pin-wrapper .result {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            color: white;
+            background: #98002e;
+            font-weight: 300;
+            font-size: 1.1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            padding: 25px 30px;
+            box-sizing: border-box;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(10px);
+            transition-duration: 0.4s;
+            transition-delay: 0.2s;
+            z-index: 99;
+            flex-direction: column;
+        }
+
+            main.container-pin .pin-wrapper .result .result-pin {
+                font-weight: 600;
+            }
+
+            main.container-pin .pin-wrapper .result.shown {
+                opacity: 1;
+                transform: none;
+                pointer-events: all;
+                transition-delay: 0.85s;
+            }
+
+            main.container-pin .pin-wrapper .result button.reset {
+                background: none;
+                border: none;
+                border-bottom: 2px solid white;
+                padding: 0 0 2px;
+                font-weight: 600;
+                font-size: 0.8em;
+                font-family: 'Roboto Mono';
+                color: white;
+                cursor: pointer;
+            }
+
+    main.container-pin .focus {
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+
+        main.container-pin .focus:focus ~ .caret.blink {
+            -webkit-animation: blink 0.5s infinite alternate;
+            animation: blink 0.5s infinite alternate;
+        }
+
+    main.container-pin.show-button {
+        transform: translateX(calc(-0.5rem - 45px));
+    }
+
+        main.container-pin.show-button .pin-wrapper .submit {
+            transform: none;
+        }
+
+            main.container-pin.show-button .pin-wrapper .submit svg {
+                transform: translateY(-50%);
+                opacity: 1;
+            }
+
+a.reenviar-pin {
+    font-weight: 600;
+    color: #ed1a3b;
+    text-decoration: none;
+    background-color: transparent;
+}
+    a.reenviar-pin.disabled {
+        opacity: 0.5;
+        cursor: auto;
+    }
+
+    a.reenviar-pin:hover:not(.disabled) {
+        color: #98002e;
+        text-decoration: underline;
+    }
+
+#contador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    background: var(--red);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 30px;
+    color: white
+
+}

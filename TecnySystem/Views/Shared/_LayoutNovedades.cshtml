@@ -1,0 +1,343 @@
+﻿@{
+    @using Microsoft.Extensions.Configuration
+    @inject IConfiguration Configuration
+}
+
+<!DOCTYPE html>
+<html class="ie8" lang="es">
+<head>
+    <!--LayoutNovedades.cshtml-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Sumba Fashion</title>
+	@* <img src="~/img/home/logo_sumbafashion.jpg" /> *@
+    <!--Estilos Propios-->
+    <link href="@Url.Content("~/css/Home/estilos.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/css/Home/normalize.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/css/NovedadesOnline/estilosNovedades.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/css/NovedadesOnline/estilosSideNavBar.css")" rel="stylesheet" type="text/css" />
+    <!--CSS Boostrap 4-->
+    <link href="~/css/bootstrap/bootstrap4.4.1.min.css" rel="stylesheet" />
+    <!--Estilos Propios-->
+    <link href="@Url.Content("~/lib/animatecss/dist/css/animate.css")" rel="stylesheet" type="text/css" />
+    <!--Iconos -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+          crossorigin="anonymous">
+    <!--Icono Pestaña -->
+    <link rel="shortcut icon" href="@Url.Content("~/img/Home/icono-novedades.png")" />
+    <!--Fonts-->
+    <link href="~/css/fontsgoogle/css.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/fonts/flaticon.css")">
+
+    <style>
+        #selectEmpresas .select2-container--bootstrap4 .select2-selection {
+            background-color: transparent !important;
+            color: white !important;
+        }
+
+        #selectEmpresas .select2-container--bootstrap4 {
+            width: 100% !important;
+        }
+    </style>
+</head>
+
+
+
+<body class=" scroll-content bg-charcoal">
+
+
+    <div class="loader" id="loader">
+        <div class="spin-loader" aria-hidden="true"></div>
+    </div>
+
+    <div class="loaderAlert" id="loaderAlert" style="display:none;">
+        <div class="spin-loader-alert" aria-hidden="true"></div>
+    </div>
+
+    <div class="wrapper " style="background:transparent!important;">
+        <!-- Sidebar  -->
+
+        <nav id="sidebar" class="height-100" style="position:relative!important;">
+            <div class="sidebar-header py-3 px-3 row">
+                <h3 class="d-none titulo-sdbar py-3 m-0 col-12"> </h3>
+                <strong class="color-white" style="font-size:20px;" id="letraEmpresa">B</strong>
+
+                <h3 class="color-white  col-12 sdb-empresa" style="font-weight: 400!important; padding:5px;">Tienda</h3>
+                <h3 class="sdb-empresa color-white  col-12 p-0"><select class="js-example-basic-multiple js-states form-control col-12 " id="selectEmpresas"></select></h3>
+                <h3 class="color-white sdb-tipo col-12 " style="padding:5px;">Planilla <span id="TipoPlanilla"></span></h3>
+            </div>
+
+            <ul class="list-unstyled components" id="DivMenu">
+
+                <li class="active w-100  my-2">
+                    <div class="">
+                        <a href="@Url.Action("inicio", "Inicio")" class="dropdown-toggle  w-100 px-2 py-2 flex-align-center">
+                            <i class="fas fa-home px-2 icon-left color-white flat-22" data-toggle="tooltip" data-placement="left" title="Ingresos"></i>
+
+                            <span class="">Inicio</span>
+
+                        </a>
+                    </div>
+
+                </li>
+            </ul>
+
+        </nav>
+        <nav class="navbar  bg-burgundy  sombra-suave px-0 w-100" style="position:fixed!important;" id="navtop">
+            <div class="row w-100">
+
+                <div class="col-12 col-md-12 col-lg-5 p-0 " style="display:flex; flex-direction:column; justify-content:center;">
+
+                    <div class="row " style="display:flex; align-items:stretch;">
+                        <button type="button" id="sidebarCollapse" class="btn-menu col-12 col-lg-1">
+                            <i class="fas fa-bars color-white"></i>
+
+                            <span class="color-white text-grueso"></span>
+                        </button>
+                        <div class="col-12 col-lg-8  py-2">
+                            <h6 class="m-0  color-white negrita">Sumba Fashion EIRL  - <span id="NombreEmpresa"></span></h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-7 p-0">
+                    <div class="row d-flex justify-content-end" style=" align-items:stretch;">
+                        <div class="col-12 col-lg-6 " style="display: flex; flex-direction: row; align-items: stretch;">
+                            <div class="row w-100">
+                                
+                                <div class="col flex-jc-ac div-nav-alert p-0" style="border-left: 1px solid #e2e8ee42;">
+                                    <button type="button" class="btn bg-transparent btn-border dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-toggle-off color-white"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right-not">
+                                        <button class="dropdown-item color-slate" type="button" data-toggle="modal" data-target="#Perfil" onclick="Perfil()"> <i class="far fa-user-circle icon-submit color-slate" style="width: 25px; text-align: center;"></i> Mi Perfil</button>
+                                        <button class="dropdown-item color-slate" type="button" data-toggle="modal" data-target="#Sistema" onclick="ElegirSistema()"> <i class="fas fa-cubes icon-submit color-slate" style="width: 25px; text-align: center;"></i> Elegir Sistema</button>
+                                        <button class="dropdown-item color-slate" type="button" data-toggle="modal" data-target="#Salir" onclick="CerrarSesion()"> <i class="fas fa-sign-out-alt icon-submit color-slate" style="width: 25px; text-align: center;"></i> Salir</button>
+                                    </div>
+                                </div>
+                                <div class="col flex-jc-ac px-2">
+                                    <span class="color-white negrita" style="font-size:14px!important"><span id="NombreUsuario"></span></span>
+                                </div>
+                                <div class="col flex-jc-ac p-0">
+                                    @if (Context.Session.GetString("User") == "admin")
+                                    {
+                                        <a class="bg-gold div-nav-perf" style="cursor:pointer" href="@Url.Action("Inicio", "Inicio")">
+                                            <span class="px-1 color-white" style="font-size: 12px;">@Context.Session.GetString("User")</span>
+                                        </a>
+                                    }
+                                    else
+                                    {
+                                        <a class="bg-gold div-nav-perf" style="cursor:pointer" href="@Url.Action("Index", "UsuarioPerfil", new { Area = "Novedades" })">
+                                            <span class="px-1 color-white" style="font-size: 12px;"><span id="AbrevUsuario"></span></span>
+                                        </a>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+        <!-- Page Content  -->
+        <div id="content" class="w-100 " style="position:relative!important;">
+            <div class="m-0 p-0">
+                @RenderBody()
+            </div>
+        </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- jQuery -->
+    <script src="~/js/jquery/jquery-3.7.1.min.js"></script>
+    <script src="~/js/popper/popper.min.js"></script>
+    <script src="~/js/bootstrap/bootstrap4.4.1.min.js"></script>
+
+    <!-- SCRIP Propios-->
+    <script src="@Url.Content("~/js/Home/script.js")"></script>
+
+    <!--Ideal Form-->
+    <script src="~/lib/idealforms/jquery.idealforms.js"></script>
+    <script src="~/lib/idealforms/jquery.idealforms.i18n.es.js"></script>
+    <script src="~/lib/passrequirements/PassRequirements.js"></script>
+    <!--Scrip de DatePicker-->
+    <script src="~/js/datepicker/bootstrap-datepicker.min.js"></script>
+    <link href="~/css/datepicker/bootstrap-datepicker3.css" rel="stylesheet" />
+    <script src="~/js/ajax/moment.min.js"></script>
+
+    <!-- Select2-->
+    <link href="~/css/novedadesonline/select2.min.css" rel="stylesheet" />
+    <link href="~/css/NovedadesOnline/select2-bootstrap4.min.css" rel="stylesheet" />
+    <script src="~/js/novedadesonline/select2.full.min.js"></script>
+
+    
+
+    <script>
+        jQuery(document).ready(function () {
+            jQuery(".loader").fadeOut("slow");
+            jQuery(".loaderAlert").fadeOut("slow");
+        });
+    </script>
+
+    <script>
+
+        function CerrarSesion() {
+            @*uri = '@Url.Action("SalirSesion", "Usuarios")';*@
+                uri = '@Url.Action("Logout", "Home")';
+            $.ajax({
+                url: uri,
+                type: 'POST',
+                contentType: 'application/x-www-form-urlencoded',
+                dataType: 'json',
+                success: function (response) {
+                    if (response == "Ok") {
+                        window.location.href = '@Url.Action("Index", "Home")';
+                    } else {
+                        //console.log("error", response);
+                    }
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    //console.log("error jqXHR", jqXHR);
+                    //console.log("error jqXHR response JSON", jqXHR.responseJSON);
+                    //console.log("error textStatus", textStatus);
+                    //console.log("error errorThrown", errorThrown);
+                }
+            }).fail(function () {
+                toast_error();
+            });
+        }
+
+        function ElegirSistema() {
+            window.location.href = '@Url.Action("Sistemas", "Home")';
+        }
+
+        function Perfil() {
+            window.location.href = '@Url.Action("Index", "UsuarioPerfil", new { Area = "Novedades" })';
+        }
+
+        $(document).ready(function () {
+            /*Calcular el alto y bajar el contenido*/
+            alto = document.getElementById('navtop').offsetHeight;
+
+            document.getElementById('content').style.top = alto + 'px';
+            document.getElementById('sidebar').style.top = alto + 'px';
+
+            //Listado Empresas//
+
+            //Notificacioness//
+
+
+
+
+            //Esconder sidebar
+            $("#sidebar").addClass("active");
+
+        });
+
+        $(document).ready(function () {
+            /*TOOLTIP INICIO*/
+            $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+            /*TOOLTIP FIN*/
+
+            
+            //TIEMPO DE ALERTA FIN
+
+            $("#selectEmpresas").change(function () {
+                var empresa = $('#select2-selectEmpresas-container').text();
+                //alert("empresa: " + empresa);
+
+                var letraEmpresa = empresa.substr(0, 1);
+                $("#letraEmpresa").html(letraEmpresa);
+            });
+
+        });
+
+
+        $(document).ready(function () {
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+
+        });
+
+    </script>
+
+    <script>
+
+        $("#selectEmpresas").select2({
+            theme: 'bootstrap4',
+            placeholder: '--- Seleccione ---',
+            //allowClear: true,
+            language: {
+                noResults: function () {
+
+                    return "No hay resultado";
+                },
+                searching: function () {
+
+                    return "Buscando...";
+                },
+                inputTooShort: function () {
+                    return "Por favor ingresar 1 o más caracteres";
+                },
+            },
+            ajax: {
+                    url: '@Url.Action("GetEmpresasUsuario", "Inicio")',
+                    type: "POST",
+                    dataType: 'JSON',
+                    delay: 250,
+                    data: function (params) {
+                        return {
+                            datoBuscado: params.term,
+                        };
+                    },
+                    processResults: function (data, search) {
+                        return {
+                            results: $.map(data, function (item) {
+                                return {
+                                    id: item.dataId,
+                                    text: item.dataNombres,
+                                }
+                            })
+                        };
+                },
+                cache: true
+            },
+
+            templateResult: function (item) {
+                if (item.loading) return item.text;
+                return item.text;
+            },
+            escapeMarkup: function (markup) { return markup; },
+
+        })
+
+
+        $('#selectEmpresas').on('select2:select', function (e) {
+            var data = e.params.data;
+            ////console.log(e);
+            ////console.log(data);
+            ////console.log(data.id);
+
+            var uri = '@Url.Action("CambiarEmpresa", "Inicio", new { Area = "Novedades" })?idEmpresa=' + data.id+'';
+
+               $.ajax({
+                url: uri,
+                type: 'POST',
+                contentType: 'application/x-www-form-urlencoded',
+                dataType: 'json',
+                success: function (response) {
+                    window.location.href = '@Url.Action("Inicio", "Inicio", new { Area = "Novedades" })@*?cambiarEmpresa=1*@';
+                },
+                error: function (response) {
+                    alert("error")
+                }
+            })
+        });
+    </script>
+
+
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

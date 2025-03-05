@@ -1,0 +1,379 @@
+﻿<!DOCTYPE html>
+<html class="ie8" lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TECNYSYSTEM</title>
+    <!--Estilos Propios-->
+    <link href="@Url.Content("~/css/Home/estilos.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/css/Home/normalize.css")" rel="stylesheet" type="text/css" />
+    <!--CSS Boostrap 4-->
+    <link href="~/css/bootstrap/bootstrap4.4.1.min.css" rel="stylesheet" />
+    <!--Estilos Propios-->
+    <link href="@Url.Content("~/lib/animatecss/dist/css/animate.css")" rel="stylesheet" type="text/css" />
+    <!--Iconos -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+          crossorigin="anonymous">
+    <!--Icono Pestaña -->
+    <link rel="shortcut icon" href="@Url.Content("~/img/Home/LogoTecnySystem.png")" />
+    <!--Fonts-->
+    <link href="~/css/fontsgoogle/css.css" rel="stylesheet" />
+    <link href="~/css/datatables/datatables.bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-white">
+
+    <div class="row height-100">
+        <div class="col-12 col-lg-12 portada-bg flex-end-row ">
+            <div class="row  d-flex justify-content-center align-content-center portada-bg-row">
+                @*<div class="col-sm-12 col-md-3 ">
+                        <img class="img-fluid  " src="~/img/Home/logobdo.png" alt="">
+                    </div>*@
+
+                <div class="col-sm-12 col-md-9  flex-center-col">
+                    @RenderBody()
+                </div>
+                <div class=" col-sm-12 m-0  footer ">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 ">
+                            <div class="row py-2">
+                                <div class="col-sm-12 col-md-3 col-lg-3 flex-justify-center align-items-center d-flex mt-1">
+                                    <a href="https://www.facebook.com/profile.php?id=100086920785532" target="_blank"><i class="fab fa-facebook-square color-white px-2"></i></a>
+                                    <a href="https://www.instagram.com/sumbajeans/" target="_blank"><i class="fab fa-instagram color-white px-2"></i></a>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <div class="row">
+                                        <!-- Términos y Condiciones -->
+                                        <div class="col-sm-12 col-md-3 col-lg-3 d-flex align-items-center justify-content-center">
+                                            <h6 class="color-white m-0 delgado text-center">
+                                                <a class="color-white delgado" href="#" data-toggle="modal" data-target="#modalterminos">Términos y nada mas </a>
+                                            </h6>
+                                        </div>
+                                        <!-- Políticas de Privacidad -->
+                                        <div class="col-sm-12 col-md-3 col-lg-3 d-flex align-items-center justify-content-center">
+                                            <h6 class="color-white m-0 delgado text-center">
+                                                <a class="color-white delgado" href="#" data-toggle="modal" data-target="#modalpoliticas">Políticas de Privacidad</a>
+                                            </h6>
+                                        </div>
+                                        <!-- Aviso de Privacidad -->
+                                        <div class="col-sm-12 col-md-3 col-lg-3 d-flex align-items-center justify-content-center">
+                                            <h6 class="color-white m-0 delgado text-center">
+                                                <a class="color-white delgado" href="#" data-toggle="modal" data-target="#modalaviso">Aviso de Privacidad</a>
+                                            </h6>
+                                        </div>
+                                        <!-- BDO Portal -->
+                                        <div class="col-sm-12 col-md-3 col-lg-3 d-flex align-items-center justify-content-center">
+
+                                            <h6 class="color-white m-0 delgado d-flex justify-content-center">
+                                                <span class="d-flex align-items-center">
+                                                    <a class="color-white delgado text-left" href="https://www.sumbajeans.com/" target="_blank">
+                                                        <img class="img-fluid" src="~/img/Home/portal-logo.svg" alt="" style="max-width:40px !important;">
+                                                    </a>
+                                                </span>
+                                                <a class="color-white delgado d-flex align-items-center" href="https://www.sumbajeans.com/" target="_blank"><span>Sumba Fashion</span></a>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-3 col-lg-3  d-flex align-items-center justify-content-end">
+                                    <p class="m-0 color-white  delgado text-right"> ventas@sumbajeans.com © www.sumbajeans.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Modales -->
+    <div class="modal fade animated zoomIn " id="modalpoliticas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="row w-100">
+                        <h5 class="col-10 modal-title" id="exampleModalLabel">Políticas de Privacidad</h5>
+                        <button type="button" class="close col-2" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-body scroll-content " style="height: 350px; overflow-y: scroll; ">
+                    <div class="row ">
+                        <div class="col-12 ">
+                            <p class="py-1" style="font-size: 12px;">
+                                BDO Outsourcing S.A.C. (En adelante, “BDO”) es una organización comprometida con la protección de la información de carácter privada y confidencial obtenida dentro del giro ordinario de sus negocios en desarrollo de su respectivo objeto social. Por estas razones, BDO ha elaborado la presente Política de Privacidad Web (En adelante, “la Política”), la cual tiene por objeto regular el tratamiento de los datos personales que se pudieran recolectar de los usuarios, cuando éstos acceden o utilizan los portales de BDO.
+                                Nuestra política y procedimientos tienen como base el marco legal vigente la Ley N° 29733, Ley de Protección de Datos Personales, y su Reglamento, aprobado por Decreto Supremo N° 003-2013-JUS, teniendo como fin la protección de la información que nos ha sido confiada y suministrada voluntariamente.
+                                A través de la presente, BDO declara su compromiso de proteger los datos personales que le son proporcionados, y de respetar los principios rectores de la Protección de Datos Personales reconocidos en la normativa sobre Protección de Datos Personales.
+                                Asimismo, mediante la presente, BDO declara que respeta la privacidad, el secreto y la seguridad de los datos personales que le han sido proporcionados, adoptando en el tratamiento de los mismos las medidas técnicas, organizativas y legales necesarias para evitar su alteración, pérdida, tratamiento o acceso no autorizado, habida cuenta del estado de la tecnología, la naturaleza de los datos y los riesgos a los que se encuentran expuestos.
+                                En particular, BDO garantiza a los titulares de los datos personales que sus datos serán recopilados para su tratamiento únicamente cuando sean necesarios, pertinentes y adecuados, con relación a finalidades determinadas, explícitas y lícitas para las que se hayan obtenido; se conservarán de forma tal que se garantice su seguridad y solo por el tiempo necesario para cumplir con la finalidad de su tratamiento; y, serán suprimidos, cuando hayan dejado de ser necesarios o pertinentes a la finalidad para la cual hubiesen sido recopilados, o cuando lo solicite el titular en el ejercicio de su derecho de cancelación.
+                                La presente Política de Tratamiento de Datos Personales aplica a todos los colaboradores de BDO, así como a los terceros que realicen algún tratamiento de datos personales que estas recopilan, almacenan o gestionan.
+                            </p>
+                            <h5 class="m-0">Consentimiento</h5>
+                            <p class="py-1" style="font-size: 12px;">
+                                La obtención del consentimiento libre, previo, expreso inequívoco e informado es indispensable para que BDO pueda dar tratamiento a los datos personales de sus usuarios. Siendo ello así, BDO informará siempre al usuario, de manera previa a la recopilación de sus datos personales, sobre las finalidades para las que se utilizarán estos últimos.
+                                Mediante la publicación de la presente Política y su aceptación, el usuario otorga su consentimiento de manera libre y sin ningún impedimento para que BDO realice el tratamiento de sus datos, de conformidad con el marco legal vigente y de acuerdo con las consideraciones que se describen en la Política.
+                            </p>
+                            <h5 class="m-0">Datos de contacto</h5>
+                            <p class="py-1" style="font-size: 12px;">
+                                BDO informa a los titulares de los datos personales que, en caso lo consideren necesario, podrán ejercer sus derechos de acceso, rectificación, cancelación y oposición (Derechos ARCO), en los términos contemplados en la normativa sobre Protección de Datos Personales o pueden formular las consultas, observaciones o comentarios sobre el tratamiento de sus datos personales, enviando su solicitud en la dirección Av. Camino Real 456, Torre Real, Piso 12,
+                                San Isidro o a través del correo electrónico: gestion_humana@bdo.com.pe; especificando sus datos, acreditando su
+                                identidad mediante la copia escaneada de su documento de identidad, exponiendo los motivos de su solicitud y, de ser el caso, adjuntando los documentos que acreditan lo solicitado.
+                            </p>
+                            <h5 class="m-0">Alcance de la Política de Privacidad</h5>
+                            <p class="py-1" style="font-size: 12px;">
+                                La presente Política aplica únicamente al sitio web de BDO. En caso se retire de este dominio, se encontrará sujeto a las políticas de privacidad de los sitios web que visite. BDO no se hace responsable por visitas que usted haga a otros sitios web, por lo que recomendamos a nuestros usuarios revisar la política de privacidad de los sitios que visite.
+                            </p>
+                            <h5 class="m-0">Cookies</h5>
+                            <p class="py-1" style="font-size: 12px;">
+                                El sitio web de BDO recoge información estándar de registro, incluyendo su dirección IP, tipo de navegador, el idioma, tiempos de acceso y direcciones de Sitios Web. Asimismo, BDO o sus proveedores utilizan cookies o web beacons para optimizar su experiencia de uso. Si desea saber más, consulte nuestra Política de cookies, aquí también podrá encontrar información acerca de cómo modificar los ajustes de cookies.
+                            </p>
+                            <h5 class="m-0">Modificaciones de la Política de Privacidad</h5>
+                            <p class="py-1" style="font-size: 12px;">
+                                BDO podrá modificar la presente Política con el objetivo de cumplir con disposiciones legales peruanas y extranjeras. En dichos casos, hará de conocimiento a sus usuarios respecto a las modificaciones ocurridas en esta Política, indicando la fecha desde cuando dichas modificaciones se encontrarán vigentes.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer px-4 d-none">
+
+
+                    <button class="btn-efect-right-red bg-red py-2 m-0" type="submit">
+                        <i class="fas fa-envelope icon-submit color-white negrita"></i>
+                        <h6 class="color-white">Cerrar</h6>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade animated zoomIn " id="modalterminos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="row w-100">
+                        <h5 class="col-10 modal-title" id="exampleModalLabel">Términos y Condiciones</h5>
+                        <button type="button" class="close col-2" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-body scroll-content " style="height: 350px; overflow-y: scroll; ">
+                    <div class="row ">
+                        <div class="col-12 ">
+                            <p class="py-1" style="font-size: 12px;">
+                                Los presentes términos de uso aplican al presente Sitio Web.
+                            </p>
+                            <h5 class="m-0">1. Términos y condiciones</h5>
+                            <p class="py-1" style="font-size: 12px;">
+                                Al navegar en este Sitio Web, usted está consintiendo sus Términos y Condiciones de uso. Por tanto, si no está de acuerdo con los mismos, usted no está autorizado para continuar navegando en este Sitio Web y deberá abandonar inmediatamente el Sitio Web.
+
+                                Usted no está autorizado a copiar o utilizar cualquier software, proceso patentado o la tecnología incorporada o descrita en este Sitio Web.
+
+                                Usted deberá cumplir con todas las leyes aplicables respecto al acceso y uso de este Sitio Web.
+
+                                Informamos que podemos utilizar la información personal y datos, de acuerdo con nuestra Política de Privacidad y Cookies mismos que se incorporan en la presente por referencia. Usted acepta, por medio de la presente, los Términos de nuestra Política de Privacidad, incluyendo las obligaciones contenidas en dichos avisos.
+                            </p>
+                            <h5 class="m-0">2. Información de contacto</h5>
+                            <p class="py-1" style="font-size: 12px;">
+                                Para ejercer sus derechos como titular de los datos personales que proporciona a través de este Sitio Web y/o para la realización de consultas, podrá presentar su solicitud en la dirección Av. Camino Real 456, Torre Real,
+                                Piso 12, San Isidro o a través del correo electrónico: gestion_humana@bdo.com.pe
+                            </p>
+                            <h5 class="m-0">3. Derechos de propiedad intelectual y términos de licencia</h5>
+                            <p class="py-1" style="font-size: 12px;">
+                                El presente Sitio Web y la información que la misma contiene están protegidos por los derechos de autor, derechos de propiedad industrial, marcas patentadas y otras del marco legal vigente y son propiedad o licencia de BDO Outsourcing S.A.C. (En adelante, BDO) y/o de terceros.
+
+                                Usted se encuentra autorizado para visualizar los contenidos del presente Sitio Web, a través de la pantalla de un ordenador o de un dispositivo móvil o para descargarlos e imprimir una copia para uso personal, siempre y cuando no altere ni elimine contenido alguno o parte alguna de la página web sin nuestra autorización expresa, como tampoco modificará o borrará aviso alguno de derechos de autor, marcas registradas y cualesquiera avisos de propiedad.
+
+                                Nos reservamos todos los derechos no concedidos expresamente en estos Términos de Uso.
+
+                                Las referencias sobre marcas comerciales de terceros en este Sitio Web son meramente para fines de identificación y no hacen referencia a que hayan aprobado este Sitio Web o su contenido. No se concede de ninguna manera el derecho a utilizar las marcas de terceros.
+
+                            </p>
+                            <h5 class="m-0">4. Responsabilidad por el Uso del Sitio Web</h5>
+                            <p class="py-1" style="font-size: 12px;">
+                                Le informamos que el contenido de este Sitio Web tiene un propósito exclusivamente informativo. El uso que el usuario haga de la información contenida en el Sitio Web será bajo su propio riesgo. El usuario asume la responsabilidad por el empleo de la información contenida en el Sitio.
+
+                                El Sitio Web es puesto a disposición tal como se puede apreciar, y no otorgamos garantía tácita o expresa al respecto. Sin perjuicio de lo antes mencionado, no garantizamos que el Sitio Web sea seguro, libre de errores, virus o códigos maliciosos, y que cumpla con criterios particulares sobre desempeño y calidad. Rechazamos expresamente toda garantía implícita,
+
+                                incluyendo, sin limitación, las garantías de comercialización, sobre algún título, aptitud para un propósito particular, no infracción, compatibilidad, seguridad y exactitud.
+
+                                Nos reservamos el derecho a modificar, suspender o retirar la totalidad o cualquier parte de este Sitio Web y de sus contenidos en cualquier momento y sin previo aviso y sin incurrir en ningún tipo de responsabilidad.
+
+                                En el uso de este Sitio Web, podemos proporcionar ocasionalmente enlaces que pueden dirigir a Páginas Web, recursos y herramientas proveídas por terceros. BDO no tiene control alguno sobre los enlaces que proporcionamos para su comodidad y no asumiremos responsabilidad alguna al respecto de estas páginas web. Sin excepción alguna respecto a lo anterior, no garantizamos de manera tácita o expresa los contenidos de dichos Sitios Web, así como los recursos y herramientas y los enlaces que contengan. Tales contenidos, recursos y herramientas no deben entenderse por aprobados, ya sea por nosotros o por terceros.
+
+                                Las liberaciones y limitaciones de responsabilidad mencionadas anteriormente, a su vez también serán aplicadas para el personal de BDO y, tanto para BDO como para su Personal, son aplicables en la medida en que lo permita la ley.
+                            </p>
+                            <h5 class="m-0">5. Legislación Aplicable</h5>
+                            <p class="py-1" style="font-size: 12px;">
+                                Los presentes Términos y Condiciones están sometidos a la legislación peruana vigente.
+
+                                BDO no afirma que el contenido del Sitio Web pueda visualizarse o descargarse de manera lícita fuera de Perú; por tanto, el contenido, a menos que se especifique lo contrario, está dirigido expresamente a usuarios que accedan a la presente página web desde Perú.
+                            </p>
+                            <h5 class="m-0">6. Modificaciones</h5>
+                            <p class="py-1" style="font-size: 12px;">
+                                BDO podrá modificar, de manera unilateral, los presentes Términos y Condiciones de este Sitio Web. Las modificaciones que se realicen con el objetivo de cumplir con disposiciones legales peruanas y extranjeras entrarán vigor después de su publicación, con excepción de que se indique de otra manera. Es responsabilidad del usuario revisar esta Página Web y ser consciente de cualquier revisión de los Términos de Uso. El continuo uso de este Sitio Web tras una modificación de los Términos de Uso, constituye la aceptación de los mismos.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer px-4 d-none">
+
+
+                    <button class="btn-efect-right-red bg-red py-2 m-0" type="submit">
+                        <i class="fas fa-envelope icon-submit color-white negrita"></i>
+                        <h6 class="color-white">Cerrar</h6>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade animated zoomIn " id="modalaviso" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="row w-100">
+                        <h5 class="col-10 modal-title" id="exampleModalLabel">Aviso de Privacidad</h5>
+                        <button type="button" class="close col-2" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-body scroll-content " style="height: 350px; overflow-y: scroll; ">
+                    <div class="row ">
+                        <div class="col-12 ">
+
+                            <p class="py-1" style="font-size: 12px;">
+                                De conformidad con lo establecido en la Ley N° 29733, Ley de Protección de Datos Personales, y su Reglamento, aprobado por Decreto Supremo N° 003-2013-JUS, mediante la aceptación de este aviso de privacidad, usted autoriza de manera libre, previa, inequívoca y expresa para que sus datos personales, que proporcione a través del formulario web disponible en las Secciones de Registrarse, Recuperar contraseña y Cambiar contraseña, puedan ser tratados por BDO Outsourcing S.A.C. (En adelante “BDO”) esto es, para la recopilación, registro, almacenamiento, conservación, utilización, transferencia nacional e internacional y/o para que reciban cualquier otra forma de procesamiento por parte de BDO, con la finalidad de enviar boletines informativos.
+
+                                BDO garantiza que los datos personales serán tratados de forma estrictamente confidencial y respetando las medidas de seguridad dispuestas en la Ley N° 29733, Ley de Protección de Datos Personales y su Reglamento, aprobado por Decreto Supremo No. 003-2013-JUS.
+
+                                Se informa al titular de los datos personales que puede revocar la presente autorización, para el tratamiento de sus datos personales, en cualquier momento, de conformidad con lo previsto en la Ley N° 29733. Para ejercer este derecho, o cualquier otro previsto en la norma, el titular de los datos personales podrá presentar
+                                su solicitud en la dirección Av. Camino Real 456, Torre Real, Piso 12, San Isidro o a través del correo electrónico: gestion_humana@bdo.com.pe
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer px-4 d-none">
+
+
+                    <button class="btn-efect-right-red bg-red py-2 m-0" type="submit">
+                        <i class="fas fa-envelope icon-submit color-white negrita"></i>
+                        <h6 class="color-white">Cerrar</h6>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="~/js/jquery/jquery-3.7.1.min.js"></script>
+    <script src="~/js/popper/popper.min.js"></script>
+    <script src="~/js/bootstrap/bootstrap4.4.1.min.js"></script>
+    <script src="~/js/datatables/jquery.datatables.min.js"></script>
+    <script src="~/js/datatables/datatables.bootstrap4.min.js"></script>
+
+    <!-- SCRIP Propios-->
+    <script src="@Url.Content("~/js/Home/script.js")"></script>
+
+    <!--Ideal Form-->
+    <script src="~/lib/idealforms/jquery.idealforms.js"></script>
+    <script src="~/lib/idealforms/jquery.idealforms.i18n.es.js"></script>
+
+    <!--DROPZONE para Subir Archivos-->
+    <script src="~/js/NovedadesOnline/dropzone.min.js"></script>
+    <link href="~/css/NovedadesOnline/dropzone.min.css" rel="stylesheet" />
+
+    <script>
+
+        $(document).ready(function () {
+            /* SCRIP PARA Ideal Form 1*/
+            $('.idealforms').idealforms({
+                silentLoad: true,
+                rules: {
+                    'txtUsuarioDoc': 'required min:8',
+                    'txtUsuarioClave': 'required min:8',
+                    'txtUsuarioCorreo': 'required email',
+                    'txtPasswordAnterior': 'required ',
+                    'txtNewPassword': 'required strongpass',
+                    'txtConfirmClave': 'required equalto:txtClave',
+                    'txtConfirmNewPassword': 'required equalto:txtNewPassword',
+                },
+            });
+
+            /*Activa las funciones de PassRequirements*/
+            //$('#txtNewPassword2').PassRequirements();
+
+
+            //TIEMPO DE ALERTA INICIO
+            function tiempoalerta() {
+                setTimeout(function () {
+                    $(".alert").addClass('d-none');
+                }, 6000);
+            }
+            //TIEMPO DE ALERTA FIN
+
+            /*Para comprobar si se llenaron los campos*/
+            $('#btn-recuperarpass').click(function () {
+                comprobar_btnrecuperarpass();
+                tiempoalerta();
+            });
+
+            function validarEmail(e) {
+                var b = /^[^@@\s]+@@[^@@\.\s]+(\.[^@@\.\s]+)+$/;
+                return b.test(e);
+            }
+
+            function comprobar_btnrecuperarpass() {
+
+                if ($('.txtUsuarioDocRecuperar').val() == "") {
+                    $("#alert-recupass-1").removeClass('d-none');
+                }
+                else if ($('#txtUsuarioCorreo').val() == "") {
+                    $("#alert-recupass-2").removeClass('d-none');
+                }
+                else if (!validarEmail(document.getElementById("txtUsuarioCorreo").value)) {
+                    $("#alert-recupass-3").removeClass('d-none');
+                }
+            }
+
+
+            /*Para comprobar si se llenaron los campos*/
+            $('#btn-cambiarpass').click(function () {
+                comprobar_btnrcambiarpass();
+                tiempoalerta();
+            });
+
+            function comprobar_btnrcambiarpass() {
+
+                if ($('.txtUsuarioDocCambiar').val() == "") {
+                    $("#alert-cambpass-1").removeClass('d-none');
+                }
+                else if ($('#txtPasswordAnterior').val() == "") {
+                    $("#alert-cambpass-2").removeClass('d-none');
+                }
+                else if ($('#txtNewPassword2').val() == "") {
+                    $("#alert-cambpass-3").removeClass('d-none');
+                }
+            }
+
+        });
+
+    </script>
+
+    @RenderSection("Scripts", required: false)
+    @RenderSection("ScriptsAPM", required: false)
+
+</body>
+</html>

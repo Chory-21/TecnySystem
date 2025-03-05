@@ -1,0 +1,86 @@
+﻿
+.bg-rojo-degradado {
+    background: linear-gradient(120deg, #98002e, #ed1a3b);
+    padding: 10px !important;
+}
+
+.nombreempresa {
+    font-size: 15px;
+}
+
+
+#accordion {
+    font-size: 12px !important;
+}
+
+.collapse-menu ul li a {
+    padding-left: 15px !important;
+}
+
+.foto-user .foto-user-col {
+    padding: 0px !important;
+}
+
+h4 {
+    font-size: 20px !important;
+}
+
+.card-subtitle {
+    font-size: 16px !important;
+}
+
+.badge-vence {
+    font-size: 14px !important;
+}
+
+.bienvenido-movile h6 {
+    font-size: 14px !important;
+}
+
+.divnovedades {
+    width: 50% !important;
+}
+
+.divnosotros {
+    width: 50% !important;
+}
+
+.list-group-item {
+    font-size: 15px !important;
+}
+
+.custom-select option {
+    font-size: 15px !important;
+}
+
+.descvac {
+    font-size: 16px !important;
+}
+
+.descaus {
+    font-size: 16px !important;
+}
+
+.desrecuerd {
+    font-size: 16px !important;
+}
+
+.div-vaca .card .row div h1 {
+    font-size: 30px !important;
+}
+
+.div-aus .card .row div h1 {
+    font-size: 30px !important;
+}
+
+.div-recuerda .card .row div h1 {
+    font-size: 30px !important;
+}
+
+
+
+
+
+
+
+

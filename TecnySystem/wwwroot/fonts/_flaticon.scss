@@ -1,0 +1,550 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 15/03/2020 21:29
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-clock:before { content: "\f100"; }
+.flaticon-lamp:before { content: "\f101"; }
+.flaticon-cactus:before { content: "\f102"; }
+.flaticon-marker:before { content: "\f103"; }
+.flaticon-mouse:before { content: "\f104"; }
+.flaticon-list:before { content: "\f105"; }
+.flaticon-projector:before { content: "\f106"; }
+.flaticon-clip:before { content: "\f107"; }
+.flaticon-pen:before { content: "\f108"; }
+.flaticon-form:before { content: "\f109"; }
+.flaticon-pin:before { content: "\f10a"; }
+.flaticon-scissors:before { content: "\f10b"; }
+.flaticon-letter:before { content: "\f10c"; }
+.flaticon-tie:before { content: "\f10d"; }
+.flaticon-box:before { content: "\f10e"; }
+.flaticon-presentation:before { content: "\f10f"; }
+.flaticon-presentation-1:before { content: "\f110"; }
+.flaticon-basket:before { content: "\f111"; }
+.flaticon-office-building:before { content: "\f112"; }
+.flaticon-box-1:before { content: "\f113"; }
+.flaticon-note:before { content: "\f114"; }
+.flaticon-light-bulb:before { content: "\f115"; }
+.flaticon-notebook:before { content: "\f116"; }
+.flaticon-calculator:before { content: "\f117"; }
+.flaticon-printer:before { content: "\f118"; }
+.flaticon-badge:before { content: "\f119"; }
+.flaticon-office-worker:before { content: "\f11a"; }
+.flaticon-box-2:before { content: "\f11b"; }
+.flaticon-office-worker-1:before { content: "\f11c"; }
+.flaticon-office-worker-2:before { content: "\f11d"; }
+.flaticon-office-worker-3:before { content: "\f11e"; }
+.flaticon-watch:before { content: "\f11f"; }
+.flaticon-laptop:before { content: "\f120"; }
+.flaticon-office-space:before { content: "\f121"; }
+.flaticon-folder:before { content: "\f122"; }
+.flaticon-calendar:before { content: "\f123"; }
+.flaticon-chair:before { content: "\f124"; }
+.flaticon-folder-1:before { content: "\f125"; }
+.flaticon-portfolio:before { content: "\f126"; }
+.flaticon-stamp:before { content: "\f127"; }
+.flaticon-monitor:before { content: "\f128"; }
+.flaticon-facebook:before { content: "\f129"; }
+.flaticon-linkedin:before { content: "\f12a"; }
+.flaticon-youtube:before { content: "\f12b"; }
+.flaticon-twitter:before { content: "\f12c"; }
+.flaticon-instagram:before { content: "\f12d"; }
+.flaticon-whatsapp:before { content: "\f12e"; }
+.flaticon-curriculum:before { content: "\f12f"; }
+.flaticon-id-card:before { content: "\f130"; }
+.flaticon-engineer:before { content: "\f131"; }
+.flaticon-human-resources:before { content: "\f132"; }
+.flaticon-group:before { content: "\f133"; }
+.flaticon-group-1:before { content: "\f134"; }
+.flaticon-marketing:before { content: "\f135"; }
+.flaticon-planning:before { content: "\f136"; }
+.flaticon-planning-1:before { content: "\f137"; }
+.flaticon-human-resources-1:before { content: "\f138"; }
+.flaticon-interview:before { content: "\f139"; }
+.flaticon-curriculum-1:before { content: "\f13a"; }
+.flaticon-job-search:before { content: "\f13b"; }
+.flaticon-job:before { content: "\f13c"; }
+.flaticon-job-search-1:before { content: "\f13d"; }
+.flaticon-resume:before { content: "\f13e"; }
+.flaticon-teamwork:before { content: "\f13f"; }
+.flaticon-presentation-2:before { content: "\f140"; }
+.flaticon-video-conference:before { content: "\f141"; }
+.flaticon-workers:before { content: "\f142"; }
+.flaticon-team:before { content: "\f143"; }
+.flaticon-teamwork-1:before { content: "\f144"; }
+.flaticon-woman:before { content: "\f145"; }
+.flaticon-man:before { content: "\f146"; }
+.flaticon-team-1:before { content: "\f147"; }
+.flaticon-boss:before { content: "\f148"; }
+.flaticon-woman-1:before { content: "\f149"; }
+.flaticon-teamwork-2:before { content: "\f14a"; }
+.flaticon-global:before { content: "\f14b"; }
+.flaticon-toy:before { content: "\f14c"; }
+.flaticon-curriculum-2:before { content: "\f14d"; }
+.flaticon-network:before { content: "\f14e"; }
+.flaticon-boss-1:before { content: "\f14f"; }
+.flaticon-list-1:before { content: "\f150"; }
+.flaticon-document:before { content: "\f151"; }
+.flaticon-work:before { content: "\f152"; }
+.flaticon-wrench:before { content: "\f153"; }
+.flaticon-analytics:before { content: "\f154"; }
+.flaticon-chess:before { content: "\f155"; }
+.flaticon-chart:before { content: "\f156"; }
+.flaticon-team-2:before { content: "\f157"; }
+.flaticon-transfer:before { content: "\f158"; }
+.flaticon-team-3:before { content: "\f159"; }
+.flaticon-gear:before { content: "\f15a"; }
+.flaticon-brainstorming:before { content: "\f15b"; }
+.flaticon-exchange:before { content: "\f15c"; }
+.flaticon-system:before { content: "\f15d"; }
+.flaticon-support:before { content: "\f15e"; }
+.flaticon-teamwork-3:before { content: "\f15f"; }
+.flaticon-teamwork-4:before { content: "\f160"; }
+.flaticon-pdf:before { content: "\f161"; }
+.flaticon-files:before { content: "\f162"; }
+.flaticon-document-1:before { content: "\f163"; }
+.flaticon-document-2:before { content: "\f164"; }
+.flaticon-document-3:before { content: "\f165"; }
+.flaticon-document-4:before { content: "\f166"; }
+.flaticon-files-and-folders:before { content: "\f167"; }
+.flaticon-file:before { content: "\f168"; }
+.flaticon-document-5:before { content: "\f169"; }
+.flaticon-file-1:before { content: "\f16a"; }
+.flaticon-document-6:before { content: "\f16b"; }
+.flaticon-document-7:before { content: "\f16c"; }
+.flaticon-archive:before { content: "\f16d"; }
+.flaticon-files-and-folders-1:before { content: "\f16e"; }
+.flaticon-files-and-folders-2:before { content: "\f16f"; }
+.flaticon-document-8:before { content: "\f170"; }
+.flaticon-interface:before { content: "\f171"; }
+.flaticon-document-9:before { content: "\f172"; }
+.flaticon-excel:before { content: "\f173"; }
+.flaticon-excel-1:before { content: "\f174"; }
+.flaticon-word:before { content: "\f175"; }
+.flaticon-medal:before { content: "\f176"; }
+.flaticon-sports-and-competition:before { content: "\f177"; }
+.flaticon-trophy:before { content: "\f178"; }
+.flaticon-business-and-finance:before { content: "\f179"; }
+.flaticon-certificate:before { content: "\f17a"; }
+.flaticon-brainstorming-1:before { content: "\f17b"; }
+.flaticon-brainstorming-2:before { content: "\f17c"; }
+.flaticon-payment:before { content: "\f17d"; }
+.flaticon-payment-1:before { content: "\f17e"; }
+.flaticon-payment-2:before { content: "\f17f"; }
+.flaticon-payment-3:before { content: "\f180"; }
+.flaticon-promotion:before { content: "\f181"; }
+.flaticon-dismiss:before { content: "\f182"; }
+.flaticon-goal:before { content: "\f183"; }
+.flaticon-hiring:before { content: "\f184"; }
+.flaticon-analytics-1:before { content: "\f185"; }
+.flaticon-portfolio-1:before { content: "\f186"; }
+.flaticon-employee:before { content: "\f187"; }
+.flaticon-user:before { content: "\f188"; }
+.flaticon-salary:before { content: "\f189"; }
+.flaticon-user-1:before { content: "\f18a"; }
+.flaticon-target:before { content: "\f18b"; }
+.flaticon-management:before { content: "\f18c"; }
+.flaticon-medal-1:before { content: "\f18d"; }
+.flaticon-promotion-1:before { content: "\f18e"; }
+.flaticon-portfolio-2:before { content: "\f18f"; }
+.flaticon-office-building-1:before { content: "\f190"; }
+.flaticon-curriculum-3:before { content: "\f191"; }
+.flaticon-portfolio-3:before { content: "\f192"; }
+.flaticon-payment-4:before { content: "\f193"; }
+.flaticon-invoice:before { content: "\f194"; }
+.flaticon-avatar:before { content: "\f195"; }
+.flaticon-medals:before { content: "\f196"; }
+.flaticon-curriculum-4:before { content: "\f197"; }
+.flaticon-worker:before { content: "\f198"; }
+.flaticon-curriculum-5:before { content: "\f199"; }
+.flaticon-curriculum-6:before { content: "\f19a"; }
+.flaticon-employee-1:before { content: "\f19b"; }
+.flaticon-employee-2:before { content: "\f19c"; }
+.flaticon-success:before { content: "\f19d"; }
+.flaticon-success-1:before { content: "\f19e"; }
+.flaticon-success-2:before { content: "\f19f"; }
+.flaticon-group-2:before { content: "\f1a0"; }
+.flaticon-promotion-2:before { content: "\f1a1"; }
+.flaticon-podium:before { content: "\f1a2"; }
+.flaticon-employee-3:before { content: "\f1a3"; }
+.flaticon-business-and-finance-1:before { content: "\f1a4"; }
+.flaticon-promotion-3:before { content: "\f1a5"; }
+.flaticon-target-1:before { content: "\f1a6"; }
+.flaticon-group-3:before { content: "\f1a7"; }
+.flaticon-employee-4:before { content: "\f1a8"; }
+.flaticon-business-and-finance-2:before { content: "\f1a9"; }
+.flaticon-analytics-2:before { content: "\f1aa"; }
+.flaticon-office-block:before { content: "\f1ab"; }
+.flaticon-maps-and-location:before { content: "\f1ac"; }
+.flaticon-user-2:before { content: "\f1ad"; }
+.flaticon-analytics-3:before { content: "\f1ae"; }
+.flaticon-calculator-1:before { content: "\f1af"; }
+.flaticon-pie-chart:before { content: "\f1b0"; }
+.flaticon-id-card-1:before { content: "\f1b1"; }
+.flaticon-time-is-money:before { content: "\f1b2"; }
+.flaticon-hands:before { content: "\f1b3"; }
+.flaticon-tie-1:before { content: "\f1b4"; }
+.flaticon-coffee-cup:before { content: "\f1b5"; }
+.flaticon-rating:before { content: "\f1b6"; }
+.flaticon-planning-2:before { content: "\f1b7"; }
+.flaticon-risks:before { content: "\f1b8"; }
+.flaticon-megaphone:before { content: "\f1b9"; }
+.flaticon-dedication:before { content: "\f1ba"; }
+.flaticon-settings:before { content: "\f1bb"; }
+.flaticon-pencil:before { content: "\f1bc"; }
+.flaticon-bar-chart:before { content: "\f1bd"; }
+.flaticon-shortcut:before { content: "\f1be"; }
+.flaticon-steering-wheel:before { content: "\f1bf"; }
+.flaticon-partner:before { content: "\f1c0"; }
+.flaticon-clock-1:before { content: "\f1c1"; }
+.flaticon-strategy:before { content: "\f1c2"; }
+.flaticon-teamwork-5:before { content: "\f1c3"; }
+.flaticon-like:before { content: "\f1c4"; }
+.flaticon-startup:before { content: "\f1c5"; }
+.flaticon-dislike:before { content: "\f1c6"; }
+.flaticon-leader:before { content: "\f1c7"; }
+.flaticon-human-resources-2:before { content: "\f1c8"; }
+.flaticon-puzzle:before { content: "\f1c9"; }
+.flaticon-target-2:before { content: "\f1ca"; }
+.flaticon-briefcase:before { content: "\f1cb"; }
+.flaticon-video-call:before { content: "\f1cc"; }
+.flaticon-income:before { content: "\f1cd"; }
+.flaticon-negotiation:before { content: "\f1ce"; }
+.flaticon-vision:before { content: "\f1cf"; }
+.flaticon-discourse:before { content: "\f1d0"; }
+.flaticon-report:before { content: "\f1d1"; }
+.flaticon-strategy-1:before { content: "\f1d2"; }
+.flaticon-flag:before { content: "\f1d3"; }
+.flaticon-award:before { content: "\f1d4"; }
+.flaticon-competition:before { content: "\f1d5"; }
+.flaticon-measurement:before { content: "\f1d6"; }
+.flaticon-idea:before { content: "\f1d7"; }
+.flaticon-manager:before { content: "\f1d8"; }
+.flaticon-support-1:before { content: "\f1d9"; }
+.flaticon-shield:before { content: "\f1da"; }
+.flaticon-conference:before { content: "\f1db"; }
+.flaticon-globe-grid:before { content: "\f1dc"; }
+.flaticon-skills:before { content: "\f1dd"; }
+.flaticon-motivation:before { content: "\f1de"; }
+.flaticon-planning-3:before { content: "\f1df"; }
+.flaticon-network-1:before { content: "\f1e0"; }
+.flaticon-goal-1:before { content: "\f1e1"; }
+.flaticon-analysing:before { content: "\f1e2"; }
+.flaticon-report-1:before { content: "\f1e3"; }
+.flaticon-assigment:before { content: "\f1e4"; }
+.flaticon-collaboration:before { content: "\f1e5"; }
+.flaticon-collective:before { content: "\f1e6"; }
+.flaticon-connection:before { content: "\f1e7"; }
+.flaticon-consultant:before { content: "\f1e8"; }
+.flaticon-creative:before { content: "\f1e9"; }
+.flaticon-companionship:before { content: "\f1ea"; }
+.flaticon-effective:before { content: "\f1eb"; }
+.flaticon-goal-2:before { content: "\f1ec"; }
+.flaticon-help:before { content: "\f1ed"; }
+.flaticon-leader-1:before { content: "\f1ee"; }
+.flaticon-partnership:before { content: "\f1ef"; }
+.flaticon-planning-4:before { content: "\f1f0"; }
+.flaticon-success-3:before { content: "\f1f1"; }
+.flaticon-support-2:before { content: "\f1f2"; }
+.flaticon-team-4:before { content: "\f1f3"; }
+.flaticon-team-5:before { content: "\f1f4"; }
+.flaticon-team-6:before { content: "\f1f5"; }
+.flaticon-team-7:before { content: "\f1f6"; }
+.flaticon-team-8:before { content: "\f1f7"; }
+.flaticon-team-9:before { content: "\f1f8"; }
+.flaticon-teamwork-6:before { content: "\f1f9"; }
+.flaticon-teamwork-7:before { content: "\f1fa"; }
+.flaticon-video:before { content: "\f1fb"; }
+.flaticon-group-4:before { content: "\f1fc"; }
+.flaticon-pdf-1:before { content: "\f1fd"; }
+.flaticon-file-2:before { content: "\f1fe"; }
+    
+    $font-Flaticon-clock: "\f100";
+    $font-Flaticon-lamp: "\f101";
+    $font-Flaticon-cactus: "\f102";
+    $font-Flaticon-marker: "\f103";
+    $font-Flaticon-mouse: "\f104";
+    $font-Flaticon-list: "\f105";
+    $font-Flaticon-projector: "\f106";
+    $font-Flaticon-clip: "\f107";
+    $font-Flaticon-pen: "\f108";
+    $font-Flaticon-form: "\f109";
+    $font-Flaticon-pin: "\f10a";
+    $font-Flaticon-scissors: "\f10b";
+    $font-Flaticon-letter: "\f10c";
+    $font-Flaticon-tie: "\f10d";
+    $font-Flaticon-box: "\f10e";
+    $font-Flaticon-presentation: "\f10f";
+    $font-Flaticon-presentation-1: "\f110";
+    $font-Flaticon-basket: "\f111";
+    $font-Flaticon-office-building: "\f112";
+    $font-Flaticon-box-1: "\f113";
+    $font-Flaticon-note: "\f114";
+    $font-Flaticon-light-bulb: "\f115";
+    $font-Flaticon-notebook: "\f116";
+    $font-Flaticon-calculator: "\f117";
+    $font-Flaticon-printer: "\f118";
+    $font-Flaticon-badge: "\f119";
+    $font-Flaticon-office-worker: "\f11a";
+    $font-Flaticon-box-2: "\f11b";
+    $font-Flaticon-office-worker-1: "\f11c";
+    $font-Flaticon-office-worker-2: "\f11d";
+    $font-Flaticon-office-worker-3: "\f11e";
+    $font-Flaticon-watch: "\f11f";
+    $font-Flaticon-laptop: "\f120";
+    $font-Flaticon-office-space: "\f121";
+    $font-Flaticon-folder: "\f122";
+    $font-Flaticon-calendar: "\f123";
+    $font-Flaticon-chair: "\f124";
+    $font-Flaticon-folder-1: "\f125";
+    $font-Flaticon-portfolio: "\f126";
+    $font-Flaticon-stamp: "\f127";
+    $font-Flaticon-monitor: "\f128";
+    $font-Flaticon-facebook: "\f129";
+    $font-Flaticon-linkedin: "\f12a";
+    $font-Flaticon-youtube: "\f12b";
+    $font-Flaticon-twitter: "\f12c";
+    $font-Flaticon-instagram: "\f12d";
+    $font-Flaticon-whatsapp: "\f12e";
+    $font-Flaticon-curriculum: "\f12f";
+    $font-Flaticon-id-card: "\f130";
+    $font-Flaticon-engineer: "\f131";
+    $font-Flaticon-human-resources: "\f132";
+    $font-Flaticon-group: "\f133";
+    $font-Flaticon-group-1: "\f134";
+    $font-Flaticon-marketing: "\f135";
+    $font-Flaticon-planning: "\f136";
+    $font-Flaticon-planning-1: "\f137";
+    $font-Flaticon-human-resources-1: "\f138";
+    $font-Flaticon-interview: "\f139";
+    $font-Flaticon-curriculum-1: "\f13a";
+    $font-Flaticon-job-search: "\f13b";
+    $font-Flaticon-job: "\f13c";
+    $font-Flaticon-job-search-1: "\f13d";
+    $font-Flaticon-resume: "\f13e";
+    $font-Flaticon-teamwork: "\f13f";
+    $font-Flaticon-presentation-2: "\f140";
+    $font-Flaticon-video-conference: "\f141";
+    $font-Flaticon-workers: "\f142";
+    $font-Flaticon-team: "\f143";
+    $font-Flaticon-teamwork-1: "\f144";
+    $font-Flaticon-woman: "\f145";
+    $font-Flaticon-man: "\f146";
+    $font-Flaticon-team-1: "\f147";
+    $font-Flaticon-boss: "\f148";
+    $font-Flaticon-woman-1: "\f149";
+    $font-Flaticon-teamwork-2: "\f14a";
+    $font-Flaticon-global: "\f14b";
+    $font-Flaticon-toy: "\f14c";
+    $font-Flaticon-curriculum-2: "\f14d";
+    $font-Flaticon-network: "\f14e";
+    $font-Flaticon-boss-1: "\f14f";
+    $font-Flaticon-list-1: "\f150";
+    $font-Flaticon-document: "\f151";
+    $font-Flaticon-work: "\f152";
+    $font-Flaticon-wrench: "\f153";
+    $font-Flaticon-analytics: "\f154";
+    $font-Flaticon-chess: "\f155";
+    $font-Flaticon-chart: "\f156";
+    $font-Flaticon-team-2: "\f157";
+    $font-Flaticon-transfer: "\f158";
+    $font-Flaticon-team-3: "\f159";
+    $font-Flaticon-gear: "\f15a";
+    $font-Flaticon-brainstorming: "\f15b";
+    $font-Flaticon-exchange: "\f15c";
+    $font-Flaticon-system: "\f15d";
+    $font-Flaticon-support: "\f15e";
+    $font-Flaticon-teamwork-3: "\f15f";
+    $font-Flaticon-teamwork-4: "\f160";
+    $font-Flaticon-pdf: "\f161";
+    $font-Flaticon-files: "\f162";
+    $font-Flaticon-document-1: "\f163";
+    $font-Flaticon-document-2: "\f164";
+    $font-Flaticon-document-3: "\f165";
+    $font-Flaticon-document-4: "\f166";
+    $font-Flaticon-files-and-folders: "\f167";
+    $font-Flaticon-file: "\f168";
+    $font-Flaticon-document-5: "\f169";
+    $font-Flaticon-file-1: "\f16a";
+    $font-Flaticon-document-6: "\f16b";
+    $font-Flaticon-document-7: "\f16c";
+    $font-Flaticon-archive: "\f16d";
+    $font-Flaticon-files-and-folders-1: "\f16e";
+    $font-Flaticon-files-and-folders-2: "\f16f";
+    $font-Flaticon-document-8: "\f170";
+    $font-Flaticon-interface: "\f171";
+    $font-Flaticon-document-9: "\f172";
+    $font-Flaticon-excel: "\f173";
+    $font-Flaticon-excel-1: "\f174";
+    $font-Flaticon-word: "\f175";
+    $font-Flaticon-medal: "\f176";
+    $font-Flaticon-sports-and-competition: "\f177";
+    $font-Flaticon-trophy: "\f178";
+    $font-Flaticon-business-and-finance: "\f179";
+    $font-Flaticon-certificate: "\f17a";
+    $font-Flaticon-brainstorming-1: "\f17b";
+    $font-Flaticon-brainstorming-2: "\f17c";
+    $font-Flaticon-payment: "\f17d";
+    $font-Flaticon-payment-1: "\f17e";
+    $font-Flaticon-payment-2: "\f17f";
+    $font-Flaticon-payment-3: "\f180";
+    $font-Flaticon-promotion: "\f181";
+    $font-Flaticon-dismiss: "\f182";
+    $font-Flaticon-goal: "\f183";
+    $font-Flaticon-hiring: "\f184";
+    $font-Flaticon-analytics-1: "\f185";
+    $font-Flaticon-portfolio-1: "\f186";
+    $font-Flaticon-employee: "\f187";
+    $font-Flaticon-user: "\f188";
+    $font-Flaticon-salary: "\f189";
+    $font-Flaticon-user-1: "\f18a";
+    $font-Flaticon-target: "\f18b";
+    $font-Flaticon-management: "\f18c";
+    $font-Flaticon-medal-1: "\f18d";
+    $font-Flaticon-promotion-1: "\f18e";
+    $font-Flaticon-portfolio-2: "\f18f";
+    $font-Flaticon-office-building-1: "\f190";
+    $font-Flaticon-curriculum-3: "\f191";
+    $font-Flaticon-portfolio-3: "\f192";
+    $font-Flaticon-payment-4: "\f193";
+    $font-Flaticon-invoice: "\f194";
+    $font-Flaticon-avatar: "\f195";
+    $font-Flaticon-medals: "\f196";
+    $font-Flaticon-curriculum-4: "\f197";
+    $font-Flaticon-worker: "\f198";
+    $font-Flaticon-curriculum-5: "\f199";
+    $font-Flaticon-curriculum-6: "\f19a";
+    $font-Flaticon-employee-1: "\f19b";
+    $font-Flaticon-employee-2: "\f19c";
+    $font-Flaticon-success: "\f19d";
+    $font-Flaticon-success-1: "\f19e";
+    $font-Flaticon-success-2: "\f19f";
+    $font-Flaticon-group-2: "\f1a0";
+    $font-Flaticon-promotion-2: "\f1a1";
+    $font-Flaticon-podium: "\f1a2";
+    $font-Flaticon-employee-3: "\f1a3";
+    $font-Flaticon-business-and-finance-1: "\f1a4";
+    $font-Flaticon-promotion-3: "\f1a5";
+    $font-Flaticon-target-1: "\f1a6";
+    $font-Flaticon-group-3: "\f1a7";
+    $font-Flaticon-employee-4: "\f1a8";
+    $font-Flaticon-business-and-finance-2: "\f1a9";
+    $font-Flaticon-analytics-2: "\f1aa";
+    $font-Flaticon-office-block: "\f1ab";
+    $font-Flaticon-maps-and-location: "\f1ac";
+    $font-Flaticon-user-2: "\f1ad";
+    $font-Flaticon-analytics-3: "\f1ae";
+    $font-Flaticon-calculator-1: "\f1af";
+    $font-Flaticon-pie-chart: "\f1b0";
+    $font-Flaticon-id-card-1: "\f1b1";
+    $font-Flaticon-time-is-money: "\f1b2";
+    $font-Flaticon-hands: "\f1b3";
+    $font-Flaticon-tie-1: "\f1b4";
+    $font-Flaticon-coffee-cup: "\f1b5";
+    $font-Flaticon-rating: "\f1b6";
+    $font-Flaticon-planning-2: "\f1b7";
+    $font-Flaticon-risks: "\f1b8";
+    $font-Flaticon-megaphone: "\f1b9";
+    $font-Flaticon-dedication: "\f1ba";
+    $font-Flaticon-settings: "\f1bb";
+    $font-Flaticon-pencil: "\f1bc";
+    $font-Flaticon-bar-chart: "\f1bd";
+    $font-Flaticon-shortcut: "\f1be";
+    $font-Flaticon-steering-wheel: "\f1bf";
+    $font-Flaticon-partner: "\f1c0";
+    $font-Flaticon-clock-1: "\f1c1";
+    $font-Flaticon-strategy: "\f1c2";
+    $font-Flaticon-teamwork-5: "\f1c3";
+    $font-Flaticon-like: "\f1c4";
+    $font-Flaticon-startup: "\f1c5";
+    $font-Flaticon-dislike: "\f1c6";
+    $font-Flaticon-leader: "\f1c7";
+    $font-Flaticon-human-resources-2: "\f1c8";
+    $font-Flaticon-puzzle: "\f1c9";
+    $font-Flaticon-target-2: "\f1ca";
+    $font-Flaticon-briefcase: "\f1cb";
+    $font-Flaticon-video-call: "\f1cc";
+    $font-Flaticon-income: "\f1cd";
+    $font-Flaticon-negotiation: "\f1ce";
+    $font-Flaticon-vision: "\f1cf";
+    $font-Flaticon-discourse: "\f1d0";
+    $font-Flaticon-report: "\f1d1";
+    $font-Flaticon-strategy-1: "\f1d2";
+    $font-Flaticon-flag: "\f1d3";
+    $font-Flaticon-award: "\f1d4";
+    $font-Flaticon-competition: "\f1d5";
+    $font-Flaticon-measurement: "\f1d6";
+    $font-Flaticon-idea: "\f1d7";
+    $font-Flaticon-manager: "\f1d8";
+    $font-Flaticon-support-1: "\f1d9";
+    $font-Flaticon-shield: "\f1da";
+    $font-Flaticon-conference: "\f1db";
+    $font-Flaticon-globe-grid: "\f1dc";
+    $font-Flaticon-skills: "\f1dd";
+    $font-Flaticon-motivation: "\f1de";
+    $font-Flaticon-planning-3: "\f1df";
+    $font-Flaticon-network-1: "\f1e0";
+    $font-Flaticon-goal-1: "\f1e1";
+    $font-Flaticon-analysing: "\f1e2";
+    $font-Flaticon-report-1: "\f1e3";
+    $font-Flaticon-assigment: "\f1e4";
+    $font-Flaticon-collaboration: "\f1e5";
+    $font-Flaticon-collective: "\f1e6";
+    $font-Flaticon-connection: "\f1e7";
+    $font-Flaticon-consultant: "\f1e8";
+    $font-Flaticon-creative: "\f1e9";
+    $font-Flaticon-companionship: "\f1ea";
+    $font-Flaticon-effective: "\f1eb";
+    $font-Flaticon-goal-2: "\f1ec";
+    $font-Flaticon-help: "\f1ed";
+    $font-Flaticon-leader-1: "\f1ee";
+    $font-Flaticon-partnership: "\f1ef";
+    $font-Flaticon-planning-4: "\f1f0";
+    $font-Flaticon-success-3: "\f1f1";
+    $font-Flaticon-support-2: "\f1f2";
+    $font-Flaticon-team-4: "\f1f3";
+    $font-Flaticon-team-5: "\f1f4";
+    $font-Flaticon-team-6: "\f1f5";
+    $font-Flaticon-team-7: "\f1f6";
+    $font-Flaticon-team-8: "\f1f7";
+    $font-Flaticon-team-9: "\f1f8";
+    $font-Flaticon-teamwork-6: "\f1f9";
+    $font-Flaticon-teamwork-7: "\f1fa";
+    $font-Flaticon-video: "\f1fb";
+    $font-Flaticon-group-4: "\f1fc";
+    $font-Flaticon-pdf-1: "\f1fd";
+    $font-Flaticon-file-2: "\f1fe";
