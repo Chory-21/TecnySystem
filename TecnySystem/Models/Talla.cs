@@ -7,24 +7,15 @@ namespace TecnySystem.Models
     public class Talla
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [Column("id_talla")]
-        public int IdTalla { get; set; }
+        public int id_talla { get; set; }
 
-        [Required]
-        [Column("id_desc_prenda")]
-        public int IdDescPrenda { get; set; }
+        public int id_desc_prenda { get; set; }
 
-        [Required]
-        [StringLength(10)]
-        [Column("talla")]
-        public string NombreTalla { get; set; }
+        public string talla { get; set; }
 
-        [Required]
-        [Column("cantidad")]
-        public int Cantidad { get; set; }
+        public int cantidad { get; set; }
 
-        [ForeignKey("IdDescPrenda")]
+        [ForeignKey("id_desc_prenda")]
         public Desc_Prendas DescPrenda { get; set; }
     }
 }

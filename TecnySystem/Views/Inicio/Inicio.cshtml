@@ -3,9 +3,9 @@
     Layout = "~/Views/Shared/_LayoutNovedades.cshtml"; // Mantiene el layout si lo necesitas
 }
 
-<div class="row bg-white py-3 px-3 sombra">
-    <div class="col-sm-12">
-        <h4 class="m-0 color-charcoal negrita">Historial de Productos</h4>
+<div class="col-sm-12 bg-white px-3 py-3 border-bottom-oscuro">
+    <div class="col-sm-12 col-md-9">
+        <h4>Historial de Productos</h4>
     </div>
 </div>
 
@@ -84,154 +84,194 @@
 </div>
 
 <div class="col-sm-12 px-1 py-2">
-    <div class="row p-3">
+    <div class="row p-2">
         <div class="col-12 bg-white btn-border p-3">
-            <table id="tblHistorialProductos" class="table table-hover table-responsive-sm w-100">
-                <thead>
-                    <tr>
-                        <th scope="col">Código</th>
-                        <th scope="col">Código Lote</th>
-                        <th scope="col">Categoría</th>
-                        <th scope="col">Modelo</th>
-                        <th scope="col">Color</th>
-                        <th scope="col">Talla</th>
-                        <th scope="col">Cantidad</th>
-                        <th scope="col">Fecha Registro</th>
-                        <th scope="col">Falla Tela</th>
-                        <th scope="col">Falla Lavandería</th>
-                        <th scope="col">Total</th>
-                        <th scope="col">Acciones</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>854</td>
-                        <td>L001</td>
-                        <td>Pantalones</td>
-                        <td>M1</td>
-                        <td>Plomo</td>
-                        <td>32</td>
-                        <td>100</td>
-                        <td>2023-01-01</td>
-                        <td>1</td>
-                        <td>Desgaste</td>
-                        <td>10</td>
-                        <td><button class="btn btn-sm btn-danger">Eliminar</button></td>
-                    </tr>
-                    <tr>
-                        <td>372</td>
-                        <td>L001</td>
-                        <td>Pantalones</td>
-                        <td>M2</td>
-                        <td>Azul</td>
-                        <td>36</td>
-                        <td>50</td>
-                        <td>2023-02-01</td>
-                        <td>N/A</td>
-                        <td>N/A</td>
-                        <td>5</td>
-                        <td><button class="btn btn-sm btn-danger">Eliminar</button></td>
-                    </tr>
-                    <tr>
-                        <td>846</td>
-                        <td>L001</td>
-                        <td>Falda</td>
-                        <td>M3</td>
-                        <td>azul</td>
-                        <td>40</td>
-                        <td>75</td>
-                        <td>2023-03-01</td>
-                        <td>3</td>
-                        <td>Rasgado</td>
-                        <td>8</td>
-                        <td><button class="btn btn-sm btn-danger">Eliminar</button></td>
-                    </tr>
-                    <tr>
-                        <td>034</td>
-                        <td>L002</td>
-                        <td>Casaca</td>
-                        <td>M1</td>
-                        <td>CEleste</td>
-                        <td>32</td>
-                        <td>100</td>
-                        <td>2023-01-01</td>
-                        <td>1</td>
-                        <td>Desgaste</td>
-                        <td>10</td>
-                        <td><button class="btn btn-sm btn-danger">Eliminar</button></td>
-                    </tr>
-                    <tr>
-                        <td>376</td>
-                        <td>L002</td>
-                        <td>Casaca</td>
-                        <td>M2</td>
-                        <td>Azul</td>
-                        <td>36</td>
-                        <td>50</td>
-                        <td>2023-02-01</td>
-                        <td>N/A</td>
-                        <td>N/A</td>
-                        <td>5</td>
-                        <td><button class="btn btn-sm btn-danger">Eliminar</button></td>
-                    </tr>
-                    <tr>
-                        <td>845</td>
-                        <td>L001</td>
-                        <td>Short</td>
-                        <td>M3</td>
-                        <td>Plomo</td>
-                        <td>40</td>
-                        <td>75</td>
-                        <td>2023-03-01</td>
-                        <td>3</td>
-                        <td>Rasgado</td>
-                        <td>8</td>
-                        <td><button class="btn btn-sm btn-danger">Eliminar</button></td>
-                    </tr>
-                    <tr>
-                        <td>457</td>
-                        <td>L003</td>
-                        <td>ShortFalda</td>
-                        <td>M1</td>
-                        <td>Celeste</td>
-                        <td>32</td>
-                        <td>100</td>
-                        <td>2023-01-01</td>
-                        <td>1</td>
-                        <td>Desgaste</td>
-                        <td>10</td>
-                        <td><button class="btn btn-sm btn-danger">Eliminar</button></td>
-                    </tr>
-                    <tr>
-                        <td>454</td>
-                        <td>L003</td>
-                        <td>ShortFalda</td>
-                        <td>M2</td>
-                        <td>Azul</td>
-                        <td>36</td>
-                        <td>50</td>
-                        <td>2023-02-01</td>
-                        <td>N/A</td>
-                        <td>N/A</td>
-                        <td>5</td>
-                        <td><button class="btn btn-sm btn-danger">Eliminar</button></td>
-                    </tr>
-                    <tr>
-                        <td>325</td>
-                        <td>L003</td>
-                        <td>Pantalones</td>
-                        <td>M3</td>
-                        <td>Verde</td>
-                        <td>40</td>
-                        <td>75</td>
-                        <td>2023-03-01</td>
-                        <td>3</td>
-                        <td>Rasgado</td>
-                        <td>8</td>
-                        <td><button class="btn btn-sm btn-danger">Eliminar</button></td>
-                    </tr>
-                </tbody>
-            </table>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="TotalPrenda-tab" data-toggle="tab" href="#PrendaTotal" role="tab" aria-controls="PrendaTotal" aria-selected="false">Prendas</a>
+                </li>
+                @if (ViewBag.ServicioFtela != 0)
+                {
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="FTela-tab" data-toggle="tab" href="#FallasTela" role="tab" aria-controls="FallasTela" aria-selected="true">Falla Tela</a>
+                    </li>
+                }
+                @if (ViewBag.ServicioFLavanderia != 0)
+                {
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="FLavanderia-tab" data-toggle="tab" href="#FallasLavanderia" role="tab" aria-controls="FallasLavanderia" aria-selected="false">Falla Lavandería</a>
+                    </li>
+                }
+            </ul>
+
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="PrendaTotal" role="tabpanel" aria-labelledby="TotalPrenda-tab">
+                    <div class="row py-4 px-2">
+                        <div class="col-sm-12 px-2 py-2">
+                            <h6 class="color-slate negrita"><i class="fas fa-warehouse px-1 color-burgundy"></i> Total de Prendas en buen estado</h6>
+                        </div>
+                        <div class="col-sm-12 py-2 table-responsive">
+                            <table id="tblTotalPrenda" class="table table-hover table-responsive-sm w-100">
+                                <thead>
+                                    <tr>
+                                        <th><input type="checkbox" name="select_all" value="1" id="tblTotalPrenda-select-all" style="width: 25px; text-align: center;"></th>
+                                        <th scope="col">Código Lote</th>
+                                        <th scope="col">Código</th>
+                                        <th scope="col">Categoría</th>
+                                        <th scope="col">Modelo</th>
+                                        <th scope="col">Color</th>
+                                        <th scope="col">Talla</th>
+                                        <th scope="col">Cantidad</th>
+                                        <th scope="col">Fecha Registro</th>
+                                        <th scope="col">Opc</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="FallasTela" role="tabpanel" aria-labelledby="FTela-tab">
+                    <div class="row py-4 px-2">
+                        <div class="col-sm-12 px-2 py-2">
+                            <h6 class="color-slate negrita"><i class="fas fa-cut px-1 color-burgundy"></i> Total Falla Tela</h6>
+                        </div>
+                        <div class="col-sm-12 py-2 table-responsive">
+                            <table id="tblFallasTela" class="table table-hover table-responsive-sm w-100">
+                                <thead>
+                                    <tr>
+                                        <th><input type="checkbox" name="select_all" value="1" id="tblFallasTela-select-all" style="width: 25px; text-align: center;"></th>
+                                        <th scope="col" style="width: 65px!important;">Id</th>
+                                        <th scope="col">Código Lote</th>
+                                        <th scope="col">Código</th>
+                                        <th scope="col">Categoría</th>
+                                        <th scope="col">Modelo</th>
+                                        <th scope="col">Color</th>
+                                        <th scope="col">Talla</th>
+                                        <th scope="col">Cantidad</th>
+                                        <th scope="col">Fecha Registro</th>
+                                        <th scope="col">Opc</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="FallasLavanderia" role="tabpanel" aria-labelledby="FLavanderia-tab">
+                    <div class="row py-4 px-2">
+                        <div class="col-sm-12 px-2 py-2">
+                            <h6 class="color-slate negrita"><i class="fas fa-tint px-1 color-burgundy"></i> Total Falla Lavandería</h6>
+                        </div>
+                        <div class="col-sm-12 py-2 table-responsive">
+                            <table id="tblFallasLavanderia" class="table table-hover table-responsive-sm w-100">
+                                <thead>
+                                    <tr>
+                                        <th><input type="checkbox" name="select_all" value="1" id="tblFallasLavanderia-select-all" style="width: 25px; text-align: center;"></th>
+                                        <th scope="col" style="width: 65px!important;">Id</th>
+                                        <th scope="col">Código Lote</th>
+                                        <th scope="col">Código</th>
+                                        <th scope="col">Categoría</th>
+                                        <th scope="col">Modelo</th>
+                                        <th scope="col">Color</th>
+                                        <th scope="col">Talla</th>
+                                        <th scope="col">Cantidad</th>
+                                        <th scope="col">Fecha Registro</th>
+                                        <th scope="col">Opc</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Cierre de .tab-content -->
         </div>
     </div>
 </div>
+
+
+<!--DataTables JS-->
+<script src="~/js/datatables/jquery.datatables.min.js"></script>
+<script src="~/js/datatables/datatables.bootstrap4.min.js"></script>
+<script src="~/js/datatables/datatables.buttons.min.js"></script>
+<script src="~/js/datatables/buttons.bootstrap4.min.js"></script>
+<script src="~/js/ajax/jszip.min.js"></script>
+<script src="~/js/ajax/pdfmake.min.js"></script>
+<script src="~/js/ajax/vfs_fonts.js"></script>
+<script src="~/js/datatables/buttons.html5.min.js"></script>
+<script src="~/js/datatables/buttons.print.min.js"></script>
+<script src="~/js/datatables/buttons.colvis.min.js"></script>
+
+
+<!-- jQuery debe cargarse antes de cualquier otro script -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!--DataTables CSS-->
+<link href="~/css/bootstrap/bootstrap4.0.0.min.css" rel="stylesheet" />
+<link href="~/css/datatables/datatables.bootstrap.min.css" rel="stylesheet" />
+<link href="~/css/datatables/responsive.bootstrap.min.css" rel="stylesheet" />
+
+
+
+
+<script>
+    $(document).ready(function () {
+        console.log("jQuery cargado correctamente");
+        cargarTable();
+    });
+
+    $(document).ready(function () {
+        cargarTable();
+    });
+
+    function cargarTable() {
+        $('#tblInventario').DataTable({
+            dom: 'Bfrtip',
+            "destroy": true,
+            "order": [[7, 'desc']],
+            buttons: [
+                {
+                    extend: 'excelHtml5',
+                    filename: 'Inventario',
+                    title: 'Inventario',
+                    text: '<i class="fas fa-file-excel px-2"></i> Exportar',
+                    titleAttr: 'Excel',
+                    attr: { title: 'Descargar', class: 'btn btn-success align-right my-1 mx-3' }
+                }
+            ],
+            "ajax": {
+                "type": "GET",
+                "dataType": 'json',
+                "contentType": "application/json; charset=utf-8",
+                "url": '@Url.Action("GetInventario", "Inicio")',
+                "dataSrc": ""
+            },
+            "language": {
+                "decimal": "", "emptyTable": "No hay información", "info": "Mostrando _START_ a _END_ de _TOTAL_ Entradas",
+                "infoEmpty": "Mostrando 0 a 0 de 0 Entradas", "infoFiltered": "(Filtrado de _MAX_ total entradas)",
+                "lengthMenu": "Mostrar _MENU_ Entradas", "loadingRecords": "Cargando...",
+                "processing": "Procesando...", "search": "Buscar:", "zeroRecords": "Sin resultados encontrados",
+                "paginate": { "first": "Primero", "last": "Último", "next": "Siguiente", "previous": "Anterior" }
+            },
+            "columns": [
+                { "data": "Codigo_Lote", "autoWidth": true },
+                { "data": "Codigo", "autoWidth": true },
+                { "data": "Categoria", "autoWidth": true },
+                { "data": "Modelo", "autoWidth": true },
+                { "data": "Color", "autoWidth": true },
+                { "data": "Talla", "autoWidth": true },
+                { "data": "Cantidad", "autoWidth": true },
+                { "data": "Fecha_Registro", "autoWidth": true },
+                {
+                    "data": null, "render": function (data, type, row, meta) {
+                        return '<button class="btn btn-primary" onclick="verDetalles(\'' + data.Codigo_Lote + '\')">Detalles</button>';
+                    }
+                }
+            ],
+            "sDom": "<'row '<'col-sm-12 col-md-6 my-2'l><'col-sm-12 col-md-6 my-2 'f>><'row d-flex justify-content-end 'B<'col-sm-12 'tr>><'row py-2'<'col-sm-12 col-md-6 'i><'col-sm-12 col-md-6 div-page'<'#colvis'>p>>"
+        });
+    }
+
+    function verDetalles(codigoLote) {
+        alert("Mostrando detalles del lote: " + codigoLote);
+    }
+</script>

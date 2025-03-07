@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TecnySystem.Models
@@ -7,41 +9,30 @@ namespace TecnySystem.Models
     public class Desc_Prendas
     {
         [Key]
-        [Column("id_desc_prenda")]
-        public int IdDescPrenda { get; set; }
+        public int id_desc_prenda { get; set; }
 
-        [Required]
-        [StringLength(50)]
-        [Column("codigo_lote")]
-        public string CodigoLote { get; set; }
+        public string codigo_lote { get; set; }
 
-        [StringLength(50)]
-        [Column("categoria")]
-        public string Categoria { get; set; }
+        public string categoria { get; set; }
 
-        [Required]
-        [StringLength(100)]
-        [Column("modelo")]
-        public string Modelo { get; set; }
+        public string modelo { get; set; }
 
-        [Required]
-        [StringLength(50)]
-        [Column("color")]
-        public string Color { get; set; }
+        public string color { get; set; }
 
-        [Required]
-        [Column("fecha_registro")]
-        public DateTime FechaRegistro { get; set; }
+        public DateTime fecha_registro { get; set; }
 
-        // Relaciones
+        // Relaciones con otras tablas
         public ICollection<Talla> Tallas { get; set; }
-        public ICollection<Prendas> Prendas { get; set; }
+        public ICollection<Prenda> Prendas { get; set; }
+        public ICollection<FallaTela> FallasTela { get; set; }
+        public ICollection<FallaLavanderia> FallasLavanderia { get; set; }
 
         public Desc_Prendas()
         {
             Tallas = new List<Talla>();
-            Prendas = new List<Prendas>();
+            Prendas = new List<Prenda>();
+            FallasTela = new List<FallaTela>();
+            FallasLavanderia = new List<FallaLavanderia>();
         }
     }
 }
-

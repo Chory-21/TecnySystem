@@ -8,16 +8,17 @@ using Microsoft.EntityFrameworkCore;
 using MySqlConnector;
 using TecnySystem.Data;
 using TecnySystem.Models;
+using TecnySystem.SumbaServices.Sumba.Business.Interfaces;
 
 namespace TecnySystem.Controllers
 {
     public class InicioController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly IInventarioNeg _inventarioNeg;
 
-        public InicioController(ApplicationDbContext context)
+        public InicioController(IInventarioNeg inventarioNeg)
         {
-            _context = context;
+            _inventarioNeg = inventarioNeg;
         }
 
         public IActionResult Inicio()
@@ -25,60 +26,23 @@ namespace TecnySystem.Controllers
             return View();
         }
 
-        [HttpGet]
-        public async Task<IActionResult> GetHistorialProductos()
+        public JsonResult GetInventario()
         {
             try
             {
-                var historial = await _context.Prendas
-                    .Include(p => p.DescPrenda)
-                    .Include(p => p.PrendasFallas)
-                    .Select(p => new
-                    {
-                        p.CodigoPrenda,
-                        p.DescPrenda.CodigoLote,
-                        p.DescPrenda.Categoria,
-                        p.DescPrenda.Modelo,
-                        p.DescPrenda.Color,
-                        p.DescPrenda.FechaRegistro,
-                        CatFTela = p.PrendasFallas.FirstOrDefault().CatFTela,
-                        DescFTela = p.PrendasFallas.FirstOrDefault().DescFTela,
-                        EstadoFTela = p.PrendasFallas.FirstOrDefault().EstadoFTela,
-                        CatFLavanderia = p.PrendasFallas.FirstOrDefault().CatFLavanderia,
-                        DescFLavanderia = p.PrendasFallas.FirstOrDefault().DescFLavanderia,
-                        EstadoFLavanderia = p.PrendasFallas.FirstOrDefault().EstadoFLavanderia,
-                        Total = p.DescPrenda.Tallas.Sum(t => t.Cantidad)
+                Console.WriteLine("Ejecutando GetInventario...");
+                List<Prenda> lista = _inventarioNeg.ListarInventario();
+                Console.WriteLine($"Datos recibidos en GetInventario: {lista.Count} registros");
 
-                    })
-                    .ToListAsync();
-
-                return Json(new { data = historial });
+                return Json(lista);
             }
             catch (Exception ex)
             {
-                // Manejo de excepciones
-                return StatusCode(500, "Error interno del servidor: " + ex.Message);
+                Console.WriteLine("Error en GetInventario: " + ex.Message);
+                return Json(new { error = ex.Message });
             }
         }
 
-        [HttpPost]
-        public async Task<IActionResult> EliminarPrenda(string codigoPrenda)
-        {
-            try
-            {
-                var prenda = await _context.Prendas.FirstOrDefaultAsync(p => p.CodigoPrenda == codigoPrenda);
-                if (prenda != null)
-                {
-                    _context.Prendas.Remove(prenda);
-                    await _context.SaveChangesAsync();
-                    return Json(new { success = true });
-                }
-                return Json(new { success = false, message = "Prenda no encontrada" });
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, "Error interno del servidor: " + ex.Message);
-            }
-        }
+
     }
 }
